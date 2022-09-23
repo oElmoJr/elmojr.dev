@@ -9,7 +9,7 @@ export default function Links() {
 
     return (
         <Container>
-            <Button onClick={() => navigate("/portifolio")} >Portifólio</Button>
+            <Button onClick={() => navigate("/portifolio")} >Portfólio</Button>
             <Social />
         </Container>
     )
