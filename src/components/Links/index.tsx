@@ -1,11 +1,15 @@
 import { Container, Button } from "./styles"
 import Social from "../Social"
 
+import { useNavigate } from "react-router-dom"
 
 export default function Links() {
+
+    const navigate = useNavigate();
+
     return (
         <Container>
-            <Button>Portifólio (🚧 em construção)</Button>
+            <Button onClick={() => navigate("/portifolio")} >Portifólio</Button>
             <Social />
         </Container>
     )

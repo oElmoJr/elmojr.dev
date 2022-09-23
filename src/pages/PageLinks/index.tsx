@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Container } from "./styles";
-import Header from "../Header";
-import Links from "../Links";
+import Header from "../../components/Header";
+import Links from "../../components/Links";
 
-export default function Layout() {
+export default function PageLinks() {
     return (
         <Container>
             <Header />
