@@ -1,14 +1,14 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import PageLinks from "./pages/PageLinks";
-import Portifolio from "./pages/Portifolio";
+import Portfolio from "./pages/Portfolio";
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageLinks />} />
-        <Route path="/portifolio" element={<Portifolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );
