@@ -16,6 +16,8 @@ export const Container = styled.div`
 `;
 
 export const Icon = styled.img`
+    width: 60px; 
+    height: 60px;
     transition: transform ease-in-out 100ms;
     
     &:hover {
