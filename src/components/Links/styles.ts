@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    width: 437px;
+    width: 381px;
     
     margin-top: 55px;
     
@@ -23,7 +23,7 @@ export const Button = styled.button`
     transition: background-color ease-in-out 50ms;
     
     height: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     
     &:hover {
         background-color: #2F2F2F;

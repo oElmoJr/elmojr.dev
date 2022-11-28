@@ -16,11 +16,16 @@ export const Container = styled.div`
 `;
 
 export const Icon = styled.img`
-    width: 60px; 
-    height: 60px;
+    width: 52px; 
+    height: 52px;
     transition: transform ease-in-out 100ms;
     
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        width: 60px; 
+        height: 60px;
     }
 `;

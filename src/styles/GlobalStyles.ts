@@ -5,7 +5,7 @@ export default createGlobalStyle`
     * {
         box-sizing: border-box;
 
-        font-family: Roboto;
+        font-family: 'Roboto';
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -25,7 +25,6 @@ export default createGlobalStyle`
     
     body {
         background-color: #202020;
-        
         height: 100%;
     }
 `;
