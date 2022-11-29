@@ -17,7 +17,7 @@ export const Button = styled.button`
     background: none;
 
     font-size: 20px;
-    border: 2px solid #C4C4C4;
+    border: 1px solid #C4C4C4;
     border-radius: 10px; 
     cursor: pointer;
     transition: background-color ease-in-out 50ms;
