@@ -5,7 +5,6 @@ export default createGlobalStyle`
     * {
         box-sizing: border-box;
 
-        font-family: 'Roboto';
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
