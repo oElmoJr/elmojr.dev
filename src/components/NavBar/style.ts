@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    /* background-color: rgba(32, 32, 32, 0.9) */
+;
+    position: fixed;
     
     height: 84px;
-    width: auto;
+    width: 100vw;
     padding: 0 60px;
     
 `;
@@ -25,9 +30,7 @@ export const Logo = styled.h3`
     }
 `;
 
-export const Nav = styled.div`
-    margin-left: auto;
-`;
+export const Nav = styled.div``;
 
 export const NavItem = styled.a`
     color: #E5E6E0;
