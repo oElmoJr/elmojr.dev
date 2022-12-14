@@ -10,7 +10,7 @@ export default function NavBar() {
         <Container>
             <Logo>ElmoJr<span>.</span></Logo>
             <Nav>
-                <NavItem>Inicio</NavItem>
+                <NavItem href="#inicio" >Inicio</NavItem>
                 <NavItem>Sobre</NavItem>
                 <NavItem>Projetos</NavItem>
                 <NavItem onClick={() => navigate("/")}>Contato</NavItem>

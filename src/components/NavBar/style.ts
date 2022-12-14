@@ -27,6 +27,7 @@ export const Logo = styled.h3`
 
     span {
         color: #FFC412;
+        font-family: 'Aleo' !important;
     }
 `;
 
