@@ -5,4 +5,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    h1 {
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
 `;

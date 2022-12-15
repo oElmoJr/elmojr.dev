@@ -5,14 +5,15 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    /* background-color: rgba(32, 32, 32, 0.9) */
-;
     position: fixed;
     
     height: 84px;
     width: 100vw;
     padding: 0 60px;
     
+    @media (max-width: 768px) {
+        padding: 0 25px;
+    }
 `;
 
 export const Logo = styled.h3`
@@ -41,14 +42,20 @@ export const NavItem = styled.a`
     font-size: 15px;
     line-height: 16px;
     margin-left: 26px;
-
     cursor: pointer;
-
     
     :last-child {
         color: #202020;
         background-color: #FFC412;
         padding: 5px 20px;
         border-radius: 24px;
+    }
+    
+    @media (max-width: 768px) {
+        display: none;
+
+        :last-child {
+            display: block;
+        }
     }
 `;
