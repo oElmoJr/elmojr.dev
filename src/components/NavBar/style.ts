@@ -7,12 +7,13 @@ export const Container = styled.div`
 
     position: fixed;
     
-    height: 84px;
+    height: 75px;
     width: 100vw;
     padding: 0 60px;
     
     @media (max-width: 768px) {
         padding: 0 25px;
+        background-color: #202020;
     }
 `;
 

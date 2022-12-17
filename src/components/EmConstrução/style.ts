@@ -7,6 +7,8 @@ export const Container = styled.div`
     height: 100vh;
 
     h1 {
+        font-size: 70px;
+
         @media (max-width: 768px) {
             font-size: 30px;
         }

@@ -1,13 +1,8 @@
 import styled from "styled-components";
 
 export const Text = styled.h1`
-    grid-area: title;
-    
     font-family: 'Aleo', serif;
-    font-size: 70px;
-    line-height: 70px;
-    
-    color: #FFFFFF;
+    color: #E5E6E0;
 
     span {
         color: #FFC412;

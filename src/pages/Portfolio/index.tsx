@@ -3,6 +3,7 @@ import HomeSection from "../../components/HomeSection";
 import NavBar from "../../components/NavBar";
 import { Container } from "./styles";
 import { Scrollbars } from "react-custom-scrollbars";
+import AboutSection from "../../components/AboutSection";
 
 export default function Portifolio() {
 
@@ -11,8 +12,9 @@ export default function Portifolio() {
     return (
         <Scrollbars>      
             <Container>
-                <NavBar/>     
-                <HomeSection />     
+                <NavBar/>
+                <HomeSection />
+                <AboutSection />
                 <EmConstrucao />
             </Container>
         </Scrollbars>

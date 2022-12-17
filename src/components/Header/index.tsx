@@ -1,13 +1,13 @@
 import JobTitle from "../JobTitle";
+import ProfilePiture from "../ProfilePiture";
 import Title from "../Title";
-import { Container, Image} from "./styles";
+import { Container} from "./styles";
 
-const profilePhoto = require('./images/profilephoto.png');
 
 export default function Header() {
     return (
         <Container>
-            <Image src={profilePhoto}/>            
+            <ProfilePiture/>
             <Title text="ElmoJr."/>
             <JobTitle/>
         </Container>

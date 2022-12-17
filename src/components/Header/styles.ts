@@ -16,23 +16,22 @@ export const Container = styled.div`
      justify-content: center;
      align-items: center;
     }
-`;
 
-export const Image = styled.img`
-    grid-area: pic;
-    
-    border: 1px solid #FFFFFF;
-    border-radius: 28px;
-    
-    width: 118px;
-    height: 118px;
-    margin-right: 25px;
-    
-    @media (max-width: 768px) {
-        width: 212px;
-        height: 212px;
-        margin: 0 0 20px 0;
+    h1 {
+        font-size: 70px;
+        line-height: 70px;
     }
+    
+    img {
+        height: 118px;
+        width: 118px;
+        margin-right: 25px;
 
+        @media (max-width: 768px) {
+           width: 212px;
+            height: 212px;
+            margin: 0 0 20px 0;
+    }
+    }
 `;
 
