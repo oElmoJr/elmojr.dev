@@ -1,17 +1,32 @@
-import React from "react";
+import { Container, ProfileContainer, TitleContainer, Button, LinkContainer} from "./styles";
 
-import { Container } from "./styles";
-import Header from "../../components/Header";
-import Links from "../../components/Links";
+import ProfilePiture from "../../components/ProfilePiture";
+import Title from "../../components/Title";
+import JobTitle from "../../components/JobTitle";
+import SocialMediaLinks from "../../components/SocialMediaLinks"
+
+import { useNavigate } from "react-router-dom"
 
 export default function PageLinks() {
-
+    
+    const navigate = useNavigate();
     document.title = "ElmoJr | Links";
 
     return (
         <Container>
-            <Header />
-            <Links />
+            <ProfileContainer>
+                <ProfilePiture/>
+                <TitleContainer>
+                    <Title text="ElmoJr." />
+                    <JobTitle/>
+                </TitleContainer>
+            </ProfileContainer>
+
+            <LinkContainer>
+                <Button onClick={() => navigate("/portfolio")} >Portfólio</Button>
+                <SocialMediaLinks />
+            </LinkContainer>
+
         </Container>
     )
 }

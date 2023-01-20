@@ -4,7 +4,7 @@ export const Job = styled.p`
     grid-area: subtitle;
     
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27px;
     text-align: center;
     
@@ -12,7 +12,7 @@ export const Job = styled.p`
     color: #000;
     border-radius: 50px;
 
-    width: 174px;
+    width: 151px;
     height: 27px;
 
     @media (max-width: 768px) {

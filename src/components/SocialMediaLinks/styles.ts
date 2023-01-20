@@ -10,14 +10,14 @@ export const Container = styled.div`
 
     a {
         @media (max-width: 768px) {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
     }
 `;
 
 export const Icon = styled.img`
-    width: 52px; 
-    height: 52px;
+    width: 50px; 
+    height: 50px;
     transition: transform ease-in-out 100ms;
     
     &:hover {
