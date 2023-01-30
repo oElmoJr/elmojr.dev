@@ -6,7 +6,7 @@ import {
   LinkContainer,
 } from "./styles";
 
-import * as Tooltip from "@radix-ui/react-tooltip";
+import * as Popover from "@radix-ui/react-popover";
 import ProfilePiture from "../../components/ProfilePiture";
 import Title from "../../components/Title";
 import JobTitle from "../../components/JobTitle";
@@ -29,34 +29,31 @@ export default function PageLinks() {
       </ProfileContainer>
 
       <LinkContainer>
-        <Tooltip.Provider>
-          <Tooltip.Root delayDuration={400}>
-            <Tooltip.Trigger asChild>
-              <span>
-                <Button onClick={() => navigate("/portfolio")} disabled>
-                  Portfólio
-                </Button>
-              </span>
-            </Tooltip.Trigger>
-            <Tooltip.Portal>
-              <Tooltip.Content
-                style={{
-                  backgroundColor: "#E5E6E0",
-                  color: "#202020",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  fontFamily: "Roboto",
-                }}
-                className="TooltipContent"
-                sideOffset={25}
-                side={"bottom"}
-              >
-                🚧 Em construção. 🚧
-                <Tooltip.Arrow style={{ fill: "#E5E6E0" }} width={20} />
-              </Tooltip.Content>
-            </Tooltip.Portal>
-          </Tooltip.Root>
-        </Tooltip.Provider>
+        <Popover.Root>
+          <Popover.Trigger asChild>
+            <Button className="disabled">Portfólio</Button>
+            {/* <Button onClick={() => navigate("/portfolio")} disabled>
+              Portfólio
+            </Button> */}
+          </Popover.Trigger>
+
+          <Popover.Portal>
+            <Popover.Content
+              style={{
+                backgroundColor: "#E5E6E0",
+                color: "#202020",
+                padding: "10px",
+                borderRadius: "5px",
+                fontFamily: "Roboto",
+              }}
+              sideOffset={5}
+              side={"bottom"}
+            >
+              🚧 Em construção. 🚧
+              <Popover.Arrow style={{ fill: "#E5E6E0" }} width={20} />
+            </Popover.Content>
+          </Popover.Portal>
+        </Popover.Root>
 
         <SocialMediaLinks />
       </LinkContainer>

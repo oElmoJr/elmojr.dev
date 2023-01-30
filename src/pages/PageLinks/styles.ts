@@ -43,6 +43,11 @@ export const LinkContainer = styled.div`
   @media (max-width: 768px) {
     width: 210px;
   }
+
+  button {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
 `;
 
 export const Button = styled.button`
@@ -62,11 +67,6 @@ export const Button = styled.button`
 
   &:hover {
     opacity: 0.7;
-  }
-
-  &:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
   }
 
   @media (max-width: 768px) {
