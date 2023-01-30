@@ -12,9 +12,9 @@ export default function Portifolio() {
     return (
         <Scrollbars>      
             <Container>
-                {/* <NavBar/> */}
+                <NavBar/>
                 <HomeSection />
-                {/* <AboutSection /> */}
+                <AboutSection />
                 <EmConstrucao />
             </Container>
         </Scrollbars>
