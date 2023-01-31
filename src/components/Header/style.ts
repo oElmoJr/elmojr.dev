@@ -52,43 +52,43 @@ export const Container = styled.header`
   }
 `;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 24px;
 
-export const List = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  height: 24px;
+    gap: 24px;
 
-  gap: 24px;
-`;
+    li {
+      @media (max-width: 768px) {
+        display: none;
 
-export const ListItem = styled.li`
-  @media (max-width: 768px) {
-    display: none;
+        :last-child,
+        :nth-last-child(2) {
+          display: block;
+        }
+      }
 
-    :last-child,
-    :nth-last-child(2) {
-      display: block;
+      a {
+        color: #e5e6e0;
+
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 15px;
+
+        cursor: pointer;
+        transition: opacity 200ms;
+
+        :hover {
+          opacity: 0.7;
+        }
+
+        :visited {
+          color: #e5e6e0;
+        }
+      }
     }
-  }
-`;
-
-export const Ancor = styled.a`
-  color: #e5e6e0;
-
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 15px;
-
-  cursor: pointer;
-  transition: opacity 200ms;
-
-  :hover {
-    opacity: 0.7;
-  }
-
-  :visited {
-    color: #e5e6e0;
   }
 `;
