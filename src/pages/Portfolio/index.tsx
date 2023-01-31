@@ -1,22 +1,19 @@
-import EmConstrucao from "../../components/EmConstrução";
-import HomeSection from "../../components/HomeSection";
-import NavBar from "../../components/NavBar";
+import Inicio from "../../components/Inicio";
 import { Container } from "./styles";
 import { Scrollbars } from "react-custom-scrollbars";
-import AboutSection from "../../components/AboutSection";
+import About from "../../components/About";
+import Header from "../../components/Header";
 
 export default function Portifolio() {
+  document.title = "ElmoJr | Portfolio";
 
-    document.title = "ElmoJr | Portfolio";
-    
-    return (
-        <Scrollbars>      
-            <Container>
-                <NavBar/>
-                <HomeSection />
-                <AboutSection />
-                <EmConstrucao />
-            </Container>
-        </Scrollbars>
-    )
+  return (
+    <Scrollbars>
+      <Container>
+        <Header />
+        <Inicio />
+        <About />
+      </Container>
+    </Scrollbars>
+  );
 }
