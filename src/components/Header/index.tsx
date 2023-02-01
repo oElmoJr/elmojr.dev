@@ -1,26 +1,49 @@
-import { Container, Nav } from "./style";
-import { ContactButton } from "../ContactButton";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
-import Logo from "./images/logo.svg";
+import Title from "../Title";
+import ContactButton from "../ContactButton";
+import { Container, Nav } from "./style";
 import * as Switch from "@radix-ui/react-switch";
 
-export default function Header() {
+interface Prop {
+  toggleTheme(): void;
+}
+
+export default function Header({ toggleTheme }: Prop) {
+  const { title } = useContext(ThemeContext);
+
   return (
     <Container>
-      <img src={Logo} alt="Logo ElmoJr" />
-      
+      <Title text="ElmoJr." />
       <Nav>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a>Sobre</a></li>
-          <li><a>Serviços</a></li>
-          <li><a>Portifólio</a></li>
           <li>
-            <Switch.Root className="SwitchRoot">
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a>Sobre</a>
+          </li>
+          <li>
+            <a>Serviços</a>
+          </li>
+          <li>
+            <a>Portifólio</a>
+          </li>
+
+          <li>
+            <Switch.Root
+              className="SwitchRoot"
+              onCheckedChange={toggleTheme}
+              checked={title == "light"}
+            >
               <Switch.Thumb className="SwitchThumb " />
             </Switch.Root>
           </li>
-          <li><ContactButton /></li>
+
+          <li>
+            <ContactButton />
+          </li>
         </ul>
       </Nav>
     </Container>

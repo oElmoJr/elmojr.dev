@@ -32,9 +32,7 @@ export default function PageLinks() {
         <Popover.Root>
           <Popover.Trigger asChild>
             <Button className="disabled">Portfólio</Button>
-            {/* <Button onClick={() => navigate("/portfolio")} disabled>
-              Portfólio
-            </Button> */}
+            {/* <Button onClick={() => navigate("/portfolio")} disabled>Portfólio</Button> */}
           </Popover.Trigger>
 
           <Popover.Portal>
