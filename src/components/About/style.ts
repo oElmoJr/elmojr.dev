@@ -2,61 +2,71 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 80%;
+
+  gap: 64px;
 
   height: 100vh;
-  padding: 0 155px;
+  margin: 0 auto;
 
-  img {
-    height: 300px;
-    width: 300px;
+  .Photo {
+    min-width: 298px;
+    min-height: 375px;
 
     @media (max-width: 768px) {
-      height: 288px;
-      width: 288px;
+      min-height: 288px;
+      min-width: 288px;
     }
   }
 
   @media (max-width: 768px) {
-    justify-content: center;
-
     flex-direction: column;
-    padding: 0 20px;
+    align-items: center;
+    gap: 24px;
   }
 `;
 
-export const Grid = styled.div`
+export const AboutInfo = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 300px;
+  gap: 24px;
 
-  h1 {
-    font-family: "Aleo";
-    font-weight: 700;
+  h2 {
     font-size: 48px;
-
-    width: 400px;
-    margin-bottom: 20px;
-
     @media (max-width: 768px) {
-      width: 80vw;
       font-size: 30px;
     }
   }
 
-  p {
-    height: 165px;
-    width: 612px;
+  @media (max-width: 768px) {
+    gap: 16px;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      width: 80vw;
+    p {
+      width: 60vw;
     }
   }
+`;
 
-  @media (max-width: 768px) {
-    align-items: center;
+export const Button = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${(props) => props.theme.palette.colors.yellow};
+  color: ${(props) => props.theme.palette.colors.black};
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid ${(props) => props.theme.palette.common.secondary.border};
+  border-radius: 50px;
+
+  width: 129px;
+  height: 32px;
+
+  transition: opacity 200ms;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.7;
   }
 `;

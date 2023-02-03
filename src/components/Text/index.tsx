@@ -1,22 +1,18 @@
 import { Container } from "./style";
 
 interface Text {
-    text: string;
+  text: string;
 }
 
-export default function Text(props: Text) {
+export default function Text({ text }: Text) {
+  let id = 0;
+  let splitedText = text.split("");
 
-    let id=0
-    let splitText = props.text.split("")    
-    let text1 = splitText.map(e => {
-        id++
-        if (e === "|") return <br key={id}/>
-        return e
-    })
+  let formatedText = splitedText.map((e) => {
+    id++;
+    if (e === "|") return <br key={id} />;
+    return e;
+  });
 
-    return (
-        <Container>
-            {text1}
-        </Container>
-    )
+  return <Container>{formatedText}</Container>;
 }
