@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
 import Title from "../Title";
-import ContactButton from "../ContactButton";
-import { Container, Nav } from "./style";
+import { Button, Container, Nav } from "./style";
 import * as Switch from "@radix-ui/react-switch";
+import { useNavigate } from "react-router-dom";
 
 interface Prop {
   toggleTheme(): void;
@@ -12,24 +12,17 @@ interface Prop {
 
 export default function Header({ toggleTheme }: Prop) {
   const { title } = useContext(ThemeContext);
+  const navigate = useNavigate();
 
   return (
     <Container>
       <Title text="ElmoJr." />
       <Nav>
         <ul>
-          <li>
-            <a href="#inicio">Inicio</a>
-          </li>
-          <li>
-            <a>Sobre</a>
-          </li>
-          <li>
-            <a>Serviços</a>
-          </li>
-          <li>
-            <a>Portifólio</a>
-          </li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre" >Sobre</a></li>
+          <li><a href="#servicos" >Serviços</a></li>
+          <li><a href="#portifolio" >Portifólio</a></li>
 
           <li>
             <Switch.Root
@@ -42,7 +35,7 @@ export default function Header({ toggleTheme }: Prop) {
           </li>
 
           <li>
-            <ContactButton />
+            <Button onClick={() => navigate("/")}>Contatos</Button>{" "}
           </li>
         </ul>
       </Nav>

@@ -9,6 +9,8 @@ export default createGlobalStyle`
         text-decoration: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        font-family: Roboto;
     }
     
     #root {

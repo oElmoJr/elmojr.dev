@@ -57,6 +57,29 @@ export const Container = styled.header`
   }
 `;
 
+export const Button = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${(props) => props.theme.palette.colors.yellow};
+  color: ${(props) => props.theme.palette.colors.black};
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid ${(props) => props.theme.palette.common.secondary.border};
+  border-radius: 50px;
+
+  width: 90px;
+  height: 30px;
+
+  transition: opacity 200ms;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.7;
+  }
+`;
+
 export const Nav = styled.nav`
   color: ${(props) => props.theme.palette.common.primary.text};
 
@@ -92,7 +115,9 @@ export const Nav = styled.nav`
       opacity: 0.7;
     }
 
-    :visited {
+    :visited,
+    :active,
+    :link {
       color: ${(props) => props.theme.palette.common.primary.text};
     }
   }

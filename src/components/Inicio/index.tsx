@@ -5,7 +5,9 @@ import { Container } from "./style";
 export default function Inicio() {
   return (
     <Container id="inicio">
-      <Title text="Oi, eu sou o ElmoJr." />
+      <h1>
+        <Title text="Oi, eu sou o ElmoJr." />
+      </h1>
       <JobTitle />
     </Container>
   );
