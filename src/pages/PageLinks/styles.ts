@@ -29,6 +29,10 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
 
+  h1 {
+    font-size: 48px;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -44,27 +48,27 @@ export const LinkContainer = styled.div`
     width: 210px;
   }
 
-  button {
+  .disabled {
     opacity: 0.7;
     cursor: not-allowed;
   }
 `;
 
 export const Button = styled.button`
-  color: #fff;
   background: none;
+  color: ${(props) => props.theme.palette.common.primary.text};
+  border: 2px solid ${(props) => props.theme.palette.common.primary.text};
+  border-radius: 16px;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   font-size: 20px;
-  border: 2px solid #c4c4c4;
-  border-radius: 16px;
   cursor: pointer;
-  transition: opacity ease-in-out 50ms;
 
   height: 60px;
   width: 376px;
   margin: 48px 0 16px;
 
+  transition: opacity ease-in-out 50ms;
   &:hover {
     opacity: 0.7;
   }

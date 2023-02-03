@@ -23,7 +23,9 @@ export default function PageLinks() {
       <ProfileContainer>
         <ProfilePiture />
         <TitleContainer>
-          <Title text="ElmoJr." />
+          <h1>
+            <Title text="ElmoJr." />
+          </h1>
           <JobTitle />
         </TitleContainer>
       </ProfileContainer>
@@ -31,26 +33,30 @@ export default function PageLinks() {
       <LinkContainer>
         <Popover.Root>
           <Popover.Trigger asChild>
-            <Button className="disabled">Portfólio</Button>
-            {/* <Button onClick={() => navigate("/portfolio")} disabled>Portfólio</Button> */}
+            <Button
+              className="disabled"
+              // onClick={() => navigate("/portfolio")}
+            >
+              Portfólio
+            </Button>
           </Popover.Trigger>
-
           <Popover.Portal>
             <Popover.Content
+              className="PopoverContent"
               style={{
-                backgroundColor: "#E5E6E0",
-                color: "#202020",
+                backgroundColor: `#4f4f4fe1`,
+                color: "#E5E6E0",
                 padding: "10px",
-                borderRadius: "5px",
+                borderRadius: "10px",
                 fontFamily: "Roboto",
               }}
               sideOffset={5}
               side={"bottom"}
             >
               🚧 Em construção. 🚧
-              <Popover.Arrow style={{ fill: "#E5E6E0" }} width={20} />
+              <Popover.Arrow style={{ fill: "#4f4f4fe1" }} width={20} />
             </Popover.Content>
-          </Popover.Portal>
+          </Popover.Portal>{" "}
         </Popover.Root>
 
         <SocialMediaLinks />
