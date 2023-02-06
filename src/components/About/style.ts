@@ -26,7 +26,7 @@ export const Container = styled.div`
     gap: 32px;
   }
 
-  @media (max-width: 368px) {
+  @media (max-width: 480px) {
     width: 70%;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@ export const AboutInfo = styled.div`
     gap: 10px;
   }
 
-  @media (max-width: 368px) {
+  @media (max-width: 480px) {
     gap: 16px;
   }
 `;
