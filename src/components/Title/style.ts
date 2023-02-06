@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
-export const Text = styled.h2`
+export const Text = styled.h1`
+  font-size: 96px;
   font-family: "Aleo";
   line-height: 100%;
-  letter-spacing: normal;
 
   cursor: default;
 
   span {
     color: ${(props) => props.theme.palette.colors.yellow};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 56px;
+    line-height: 58px;
   }
 `;

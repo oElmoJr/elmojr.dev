@@ -16,14 +16,12 @@ export const Container = styled.div`
     width: 265px;
   }
 
-  h1 {
-    font-size: 64px;
-
+  /* h1 {
     @media (max-width: 768px) {
-      font-size: 50px;
+      font-size: 56px;
       line-height: 55px;
     }
-  }
+  } */
 
   p {
     font-size: 20px;

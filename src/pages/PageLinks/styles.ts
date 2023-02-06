@@ -30,7 +30,11 @@ export const TitleContainer = styled.div`
   justify-content: flex-end;
 
   h1 {
-    font-size: 48px;
+    font-size: 72px;
+
+    @media (max-width: 768px) {
+      font-size: 56px;
+    }
   }
 
   @media (max-width: 768px) {
