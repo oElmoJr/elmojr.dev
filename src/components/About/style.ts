@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 75%;
 
   gap: 64px;
 
@@ -15,15 +16,21 @@ export const Container = styled.div`
     min-height: 375px;
 
     @media (max-width: 768px) {
-      min-height: 288px;
-      min-width: 288px;
+      min-height: 220px;
+      min-width: 220px;
     }
   }
 
   @media (max-width: 768px) {
+    width: 85%;
+    gap: 32px;
+  }
+
+  @media (max-width: 368px) {
+    width: 70%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 24px;
   }
 `;
 
@@ -32,19 +39,12 @@ export const AboutInfo = styled.div`
   flex-direction: column;
   gap: 24px;
 
-  h2 {
-    font-size: 48px;
-    @media (max-width: 768px) {
-      font-size: 30px;
-    }
+  @media (max-width: 768px) {
+    gap: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 368px) {
     gap: 16px;
-
-    p {
-      width: 60vw;
-    }
   }
 `;
 
@@ -68,5 +68,11 @@ export const Button = styled.a`
 
   :hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 109px;
+    height: 28px;
   }
 `;
