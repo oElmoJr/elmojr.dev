@@ -10,7 +10,7 @@ export const Title = styled.h2`
     color: ${(props) => props.theme.palette.colors.yellow};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     font-size: 40px;
   }
 `;

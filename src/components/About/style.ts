@@ -15,13 +15,18 @@ export const Container = styled.div`
     min-width: 298px;
     min-height: 375px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 830px) {
       min-height: 220px;
       min-width: 220px;
     }
+
+    @media (max-width: 480px) {
+      min-height: 280px;
+      min-width: 280px;
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     width: 85%;
     gap: 32px;
   }
@@ -39,7 +44,7 @@ export const AboutInfo = styled.div`
   flex-direction: column;
   gap: 24px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     gap: 10px;
   }
 
@@ -70,7 +75,7 @@ export const Button = styled.a`
     opacity: 0.7;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     font-size: 14px;
     width: 109px;
     height: 28px;

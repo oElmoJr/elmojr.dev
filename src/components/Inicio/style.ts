@@ -12,21 +12,7 @@ export const Container = styled.div`
   height: 100vh;
   margin: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     width: 265px;
-  }
-
-  /* h1 {
-    @media (max-width: 768px) {
-      font-size: 56px;
-      line-height: 55px;
-    }
-  } */
-
-  p {
-    font-size: 20px;
-    width: 210px;
-    height: 35px;
-    line-height: 35px;
   }
 `;

@@ -11,7 +11,7 @@ export const Text = styled.h1`
     color: ${(props) => props.theme.palette.colors.yellow};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     font-size: 56px;
     line-height: 58px;
   }

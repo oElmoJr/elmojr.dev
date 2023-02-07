@@ -5,7 +5,7 @@ export const Container = styled.p`
   font-weight: 400;
   font-size: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     font-size: 15px;
   }
 
