@@ -1,66 +1,64 @@
+import "./styles.css";
 import {
-  Container,
-  ProfileContainer,
-  TitleContainer,
-  Button,
-  LinkContainer,
-} from "./styles";
-
-import * as Popover from "@radix-ui/react-popover";
-import ProfilePiture from "../../components/ProfilePiture";
-import Title from "../../components/Title";
-import JobTitle from "../../components/JobTitle";
-import SocialMediaLinks from "../../components/SocialMediaLinks";
+  linkedin,
+  github,
+  email,
+  telegram,
+  instagram,
+  twitter,
+} from "./inports";
+import profilePhoto from "../../assets/SquarePhoto.png";
 
 import { useNavigate } from "react-router-dom";
 
 export default function PageLinks() {
   const navigate = useNavigate();
+
   document.title = "ElmoJr | Links";
 
   return (
-    <Container>
-      <ProfileContainer>
-        <ProfilePiture />
-        <TitleContainer>
+    <div className="main-container">
+      <div className="heading-container">
+        <img src={profilePhoto} alt="" />
+        <div className="title-container">
           <h1>
-            <Title text="ElmoJr." />
+            ElmoJr<span>.</span>
           </h1>
-          <JobTitle />
-        </TitleContainer>
-      </ProfileContainer>
+          <div className="jobtitle-container">
+            <p>FontEnd developer</p>
+          </div>
+        </div>
+      </div>
 
-      <LinkContainer>
-        <Popover.Root>
-          <Popover.Trigger asChild>
-            <Button
-              className="disabled"
-              // onClick={() => navigate("/portfolio")}
-            >
-              Portfólio
-            </Button>
-          </Popover.Trigger>
-          <Popover.Portal>
-            <Popover.Content
-              className="PopoverContent"
-              style={{
-                backgroundColor: `#4f4f4fe1`,
-                color: "#E5E6E0",
-                padding: "10px",
-                borderRadius: "10px",
-                fontFamily: "Roboto",
-              }}
-              sideOffset={5}
-              side={"bottom"}
-            >
-              🚧 Em construção. 🚧
-              <Popover.Arrow style={{ fill: "#4f4f4fe1" }} width={20} />
-            </Popover.Content>
-          </Popover.Portal>{" "}
-        </Popover.Root>
+      <div className="links-container">
+        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
 
-        <SocialMediaLinks />
-      </LinkContainer>
-    </Container>
+        <div className="socialLinks-container">
+          <a href="https://www.linkedin.com/in/elmojr/">
+            <img src={linkedin} alt="Twiter icon" />
+          </a>
+
+          <a href="https://github.com/oElmoJr">
+            <img src={github} alt="GitHub icon" />
+          </a>
+
+          <a href="mailto:elmojrdv@gmail.com">
+            <img src={email} alt="Email icon" />
+          </a>
+
+          <a href="https://t.me/oElmoJr">
+            <img src={telegram} alt="Telegram icon" />
+          </a>
+
+          <a href="https://instagram.com/_elmojr">
+            <img src={instagram} alt="Instagram icon" />
+          </a>
+
+          <a href="https://twitter.com/_ElmoJr">
+            <img src={twitter} alt="Twitter icon" />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }

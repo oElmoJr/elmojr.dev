@@ -1,6 +1,6 @@
-import Inicio from "../../components/Inicio";
-import About from "../../components/About";
-import Header from "../../components/Header";
+import Inicio from "../../Containers/Inicio";
+import About from "../../Containers/About";
+import Header from "../../Containers/Header";
 
 import { Container } from "./styles";
 
