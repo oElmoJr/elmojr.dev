@@ -1,8 +1,11 @@
-.container {
-  display: flex;
-  height: 84px;
+.navbar-container {
+  position: fixed;
+  /* height: 84px; */
 
-  padding: 16px 24px;
+  background-color: #202020;
+
+  width: 100vw;
+  padding: 16px 40px;
 }
 
 .navbar-links {
@@ -10,6 +13,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  width: 100%;
 }
 
 .navbar-links-container {
@@ -65,8 +70,8 @@
 }
 
 @media screen and (max-width: 640px) {
-  .container {
-    padding: 16px 16px;
+  .navbar-container {
+    padding: 16px 24px;
   }
 
   .navbar-links-container {

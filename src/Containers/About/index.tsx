@@ -6,7 +6,7 @@ import "./styles.css";
 // import { Button, Container, AboutInfo } from "./style";
 
 export default function About() {
-  return <div></div>;
+  return <div>About</div>;
   // return (
   // <Container>
   //   <ProfilePiture />

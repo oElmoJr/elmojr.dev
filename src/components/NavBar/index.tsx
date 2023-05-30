@@ -36,7 +36,7 @@ export default function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="container">
+    <div className="navbar-container">
       <div className="navbar-links">
         <div className="navbar-links-logo">
           <img src={logo} alt="" />

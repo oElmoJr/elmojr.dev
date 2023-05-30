@@ -18,23 +18,23 @@ export default function PageLinks() {
   document.title = "ElmoJr | Links";
 
   return (
-    <div className="main-container">
-      <div className="heading-container">
+    <div className="pagelinks-main-container">
+      <div className="pagelinks-heading-container">
         <img src={profilePhoto} alt="" />
-        <div className="title-container">
+        <div className="pagelinks-title-container">
           <h1>
             ElmoJr<span>.</span>
           </h1>
-          <div className="jobtitle-container">
+          <div className="pagelinks-jobtitle-container">
             <p>FontEnd developer</p>
           </div>
         </div>
       </div>
 
-      <div className="links-container">
+      <div className="pagelinks-links-container">
         <button onClick={() => navigate("/portfolio")}>Portfólio</button>
 
-        <div className="socialLinks-container">
+        <div className="pagelinks-socialLinks-container">
           <a href="https://www.linkedin.com/in/elmojr/">
             <img src={linkedin} alt="Twiter icon" />
           </a>

@@ -16,7 +16,7 @@ export default function Portifolio() {
 
   return (
     <Scrollbars>
-      <div className="container">
+      <div className="potifolio-container">
         <NavBar />
         <Header />
         <About />
