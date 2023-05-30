@@ -1,21 +1,14 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import PageLinks from "./pages/PageLinks";
-import Portfolio from "./pages/Portfolio";
+import PageLinks from "./pages/PageLinks/index";
+import Portfolio from "./pages/Portfolio/index";
 
-interface Prop {
-  toggleTheme(): void;
-}
-
-export default function AppRoutes({ toggleTheme }: Prop) {
+export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageLinks />} />
-        <Route
-          path="/portfolio"
-          element={<Portfolio toggleTheme={toggleTheme} />}
-        />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );

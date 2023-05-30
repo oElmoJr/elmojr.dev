@@ -1,25 +1,30 @@
-import Inicio from "../../Containers/Inicio";
-import About from "../../Containers/About";
-import Header from "../../Containers/Header";
-
-import { Container } from "./styles";
-
+import "./styles.css";
 import { Scrollbars } from "react-custom-scrollbars";
 
-interface Prop {
-  toggleTheme(): void;
-}
+import {
+  Header,
+  About,
+  Services,
+  Experience,
+  Projects,
+  Footer,
+} from "../../Containers/imports";
+import NavBar from "../../components/NavBar";
 
-export default function Portifolio({ toggleTheme }: Prop) {
+export default function Portifolio() {
   document.title = "ElmoJr | Portfolio";
 
   return (
     <Scrollbars>
-      <Container>
-        <Header toggleTheme={toggleTheme} />
-        <Inicio />
+      <div className="container">
+        <NavBar />
+        <Header />
         <About />
-      </Container>
+        <Services />
+        <Experience />
+        <Projects />
+        <Footer />
+      </div>
     </Scrollbars>
   );
 }

@@ -20,9 +20,8 @@ export default createGlobalStyle`
     };
     
     body {
-        background-color: ${(props) =>
-          props.theme.palette.common.primary.background};
-        color: ${(props) => props.theme.palette.common.primary.text};
+        background-color: #202020;
+        color: #E5E6E0;
         
         height: 100%;
     }
