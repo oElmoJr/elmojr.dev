@@ -8,6 +8,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   font-family: Roboto;
+
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -25,4 +27,20 @@ body {
 
 .yellow {
   color: #ffc412;
+}
+
+.section-padding {
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-padding {
+    padding: 50px 52px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-padding {
+    padding: 50px 32px;
+  }
 }
