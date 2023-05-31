@@ -12,7 +12,7 @@ import {
 import NavBar from "../../components/NavBar";
 
 export default function Portifolio() {
-  document.title = "ElmoJr | Portfolio";
+  document.title = "ElmoJr | Portifólio";
 
   return (
     <Scrollbars>
