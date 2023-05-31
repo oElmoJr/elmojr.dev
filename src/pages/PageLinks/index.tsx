@@ -32,7 +32,9 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
+        <button disabled onClick={() => navigate("/portfolio")}>
+          Portfólio
+        </button>
 
         <div className="pagelinks-socialLinks-container">
           <a href="https://www.linkedin.com/in/elmojr/">

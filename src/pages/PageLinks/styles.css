@@ -94,6 +94,11 @@
   opacity: 0.7;
 }
 
+.pagelinks-links-container button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 .pagelinks-socialLinks-container {
   display: flex;
   justify-content: space-between;
