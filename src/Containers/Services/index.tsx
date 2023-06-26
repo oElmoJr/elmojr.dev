@@ -1,9 +1,9 @@
 import "./styles.css";
 
-import prototipagem from "./assets/prototipagem.png";
-import cleancode from "./assets/cleancode.png";
-import mobiledev from "./assets/mobiledev.png";
-import webdev from "./assets/webdev.png";
+import UXDESIGN from "./assets/UX-DESIGN.png";
+import FRONTEND from "./assets/FRONT-END.png";
+import RESPONSIVIDADE from "./assets/RESPONSIVIDADE.png";
+import ACESSIBILIDADE from "./assets/ACESSIBILIDADE.png";
 
 export default function Services() {
   return (
@@ -11,20 +11,20 @@ export default function Services() {
       <h2>O que eu faço?</h2>
       <div className="services-cards-container">
         <div className="services-card">
-          <img src={prototipagem} alt="" />
-          <p>PROTOTIPAGEM</p>
+          <img src={UXDESIGN} alt="" />
+          <p>UI/UX DESIGN</p>
         </div>
         <div className="services-card">
-          <img src={cleancode} alt="" />
-          <p>CLEAN CODE</p>
+          <img src={FRONTEND} alt="" />
+          <p>FRONT-END</p>
         </div>
         <div className="services-card">
-          <img src={mobiledev} alt="" />
-          <p>DESENVOLVIMENTO DE APLIATIVOS</p>
+          <img src={RESPONSIVIDADE} alt="" />
+          <p>RESPONSIVIDADE</p>
         </div>
         <div className="services-card">
-          <img src={webdev} alt="" />
-          <p>DESENVOLVIMENTO DE WEBSITES</p>
+          <img src={ACESSIBILIDADE} alt="" />
+          <p>ACESSIBILIDADE</p>
         </div>
       </div>
     </div>

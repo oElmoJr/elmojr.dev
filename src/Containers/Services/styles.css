@@ -6,22 +6,22 @@
 
 .services-container h2 {
   font-family: "Aleo";
-  font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 2.5rem;
+  line-height: 1.1em;
 
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
 }
 
 .services-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1036px;
 
-  gap: 24px;
+  gap: 2rem;
+
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .services-card {
@@ -32,65 +32,31 @@
 
   background: #323232;
 
-  border: 2px solid #4f4f4f;
   border-radius: 10px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 
-  width: 205px;
-  height: 252px;
+  /* height: 21vmax; */
+  padding: 3vmax 1vmax;
+}
 
-  /* padding: 32px 24px; */
+.services-card img {
+  height: 8vmax;
 }
 
 .services-card p {
-  margin-top: 41px;
   text-align: center;
+
   font-family: "Aleo";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.5em;
+  white-space: nowrap;
 
-  width: 165px;
-}
-
-@media screen and (max-width: 780px) {
-  .services-cards-container {
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1036px;
-  }
-
-  .services-container h2 {
-    font-size: 32px;
-    line-height: 46px;
-    margin-bottom: 24px;
-  }
+  margin-top: 2.5em;
 }
 
 @media screen and (max-width: 640px) {
   .services-cards-container {
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1036px;
-
-    /* gap: 24px; */
-  }
-
-  .services-card {
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* @media screen and (max-width: 560px) {
-  .services-cards-container {
-    justify-content: center;
-    gap: 32px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .services-cards-container {
-    justify-content: center;
-    gap: 32px;
-  }
-} */
