@@ -1,14 +1,13 @@
 import "./styles.css";
 import photo from "../../assets/Foto.png";
+import Title from "../../components/Title";
 
 export default function About() {
   return (
     <div id="about" className="about-container section-padding">
       <img src={photo} alt="Uma foto minha" />
       <div className="about-info-container">
-        <h2>
-          Sobre mim<span className="yellow">:</span>
-        </h2>
+        <Title>Sobre mim:</Title>
         <p>
           Sou estudante de Ciência da Computação na UNESA. Tenho um grande
           interesse pela tecnologia, especialmente pelo desenvolvimento web e

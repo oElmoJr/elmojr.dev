@@ -4,11 +4,12 @@ import UXDESIGN from "./assets/UX-DESIGN.png";
 import FRONTEND from "./assets/FRONT-END.png";
 import RESPONSIVIDADE from "./assets/RESPONSIVIDADE.png";
 import ACESSIBILIDADE from "./assets/ACESSIBILIDADE.png";
+import Title from "../../components/Title";
 
 export default function Services() {
   return (
     <div id="services" className="services-container section-padding">
-      <h2>O que eu faço?</h2>
+      <Title>O que eu faço:</Title>
       <div className="services-cards-container">
         <div className="services-card">
           <img src={UXDESIGN} alt="" />

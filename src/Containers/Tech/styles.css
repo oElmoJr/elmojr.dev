@@ -1,0 +1,10 @@
+.sample-slider,
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+@media screen and (max-width: 640px) {
+  .swiper-wrapper img {
+    height: 65px;
+  }
+}

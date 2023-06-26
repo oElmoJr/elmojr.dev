@@ -1,18 +1,19 @@
-import { Text } from "./style";
+import "./styles.css";
 
 interface TitleProps {
-  text: string;
+  children: string;
 }
 
-export default function Title({ text }: TitleProps) {
-  let splitedText = text.split("");
+export default function Title({ children }: TitleProps) {
+  let splitedText = children.split("");
 
   let formatedText = splitedText.map((e, i) => {
     if (e === ".") return <span key={`${e}-${i}`}>{e}</span>;
     if (e === ",") return <span key={`${e}-${i}`}>{e}</span>;
     if (e === ":") return <span key={`${e}-${i}`}>{e}</span>;
+
     return e;
   });
 
-  return <Text>{formatedText}</Text>;
+  return <h2>{formatedText}</h2>;
 }

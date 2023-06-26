@@ -20,7 +20,7 @@ const Menu = (): any => {
         <a href="#services">Serviços</a>
       </p>
       <p>
-        <a href="#experience">Experiência</a>
+        <a href="#tech">Tecnologias</a>
       </p>
       <p>
         <a href="#projects">Portifólio</a>
