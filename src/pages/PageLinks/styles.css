@@ -5,8 +5,9 @@
   justify-content: center;
 
   height: 457px;
-  width: 376px;
-  margin: auto;
+  height: 100dvh;
+
+  margin: 0 auto;
 }
 
 .pagelinks-heading-container {

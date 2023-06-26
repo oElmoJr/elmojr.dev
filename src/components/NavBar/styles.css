@@ -1,8 +1,15 @@
 .navbar-container {
   position: fixed;
+  /* position: absolute; */
   /* height: 84px; */
 
-  background-color: #202020;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 0.9612219887955182) 7%,
+    rgba(32, 32, 32, 0.7343312324929971) 35%,
+    rgba(32, 32, 32, 0.48503151260504207) 68%,
+    rgba(32, 32, 32, 0) 100%
+  );
 
   width: 100%;
   padding: 1rem 2rem;
@@ -60,7 +67,7 @@
   display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 830px) {
   .navbar-links-container {
     display: none;
   }

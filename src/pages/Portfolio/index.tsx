@@ -5,7 +5,7 @@ import {
   Header,
   About,
   Services,
-  Experience,
+  Tech,
   Projects,
   Footer,
 } from "../../Containers/imports";
@@ -21,7 +21,7 @@ export default function Portifolio() {
         <Header />
         <About />
         <Services />
-        <Experience />
+        <Tech />
         <Projects />
         <Footer />
       </div>

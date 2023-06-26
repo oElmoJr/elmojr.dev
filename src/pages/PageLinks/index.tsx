@@ -37,27 +37,27 @@ export default function PageLinks() {
         </button>
 
         <div className="pagelinks-socialLinks-container">
-          <a href="https://www.linkedin.com/in/elmojr/">
+          <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
             <img src={linkedin} alt="Twiter icon" />
           </a>
 
-          <a href="https://github.com/oElmoJr">
+          <a target="_blank" href="https://github.com/oElmoJr">
             <img src={github} alt="GitHub icon" />
           </a>
 
-          <a href="mailto:elmojrdv@gmail.com">
+          <a target="_blank" href="mailto:elmojrdv@gmail.com">
             <img src={email} alt="Email icon" />
           </a>
 
-          <a href="https://t.me/oElmoJr">
+          <a target="_blank" href="https://t.me/oElmoJr">
             <img src={telegram} alt="Telegram icon" />
           </a>
 
-          <a href="https://instagram.com/_elmojr">
+          <a target="_blank" href="https://instagram.com/_elmojr">
             <img src={instagram} alt="Instagram icon" />
           </a>
 
-          <a href="https://twitter.com/_ElmoJr">
+          <a target="_blank" href="https://twitter.com/_ElmoJr">
             <img src={twitter} alt="Twitter icon" />
           </a>
         </div>

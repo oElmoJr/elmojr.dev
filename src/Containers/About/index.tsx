@@ -29,8 +29,12 @@ export default function About() {
         </p>
         <div className="about-link-container">
           <a href="#">Baixar CV</a>
-          <a href="https://www.linkedin.com/in/elmojr/">LinkedIn</a>
-          <a href="https://github.com/oElmoJr">GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
+            LinkedIn
+          </a>
+          <a target="_blank" href="https://github.com/oElmoJr">
+            GitHub
+          </a>
         </div>
       </div>
     </div>
