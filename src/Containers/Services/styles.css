@@ -8,11 +8,10 @@
   display: grid;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1036px;
 
-  gap: 2rem;
+  gap: 1.5rem;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
 }
 
 .services-card {
@@ -24,14 +23,12 @@
   background: #323232;
 
   border-radius: 10px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-
-  /* height: 21vmax; */
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
   padding: 3vmax 1vmax;
 }
 
 .services-card img {
-  height: 8vmax;
+  height: 7vmax;
 }
 
 .services-card p {
@@ -39,15 +36,9 @@
 
   font-family: "Aleo";
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5em;
   white-space: nowrap;
 
   margin-top: 2.5em;
-}
-
-@media screen and (max-width: 640px) {
-  .services-cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
