@@ -14,6 +14,10 @@
   border: none;
 }
 
+.swiper-wrapper img {
+  cursor: pointer;
+}
+
 .PopoverContent {
   outline: none;
   max-width: 300px;
