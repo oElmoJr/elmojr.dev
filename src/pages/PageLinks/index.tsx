@@ -32,7 +32,7 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        <button disabled onClick={() => navigate("/portfolio")}>
+        <button onClick={() => navigate("/portfolio")}>
           Portfólio
         </button>
 

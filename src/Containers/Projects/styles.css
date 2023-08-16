@@ -1,0 +1,148 @@
+.projects-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.projects-menu li {
+  width: 100%;
+}
+
+.projects-menu button,
+input {
+  color: var(--white, #e5e6e0);
+  border-radius: 5px;
+  border: none;
+  background: var(--grey, #323232);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  width: 100%;
+  padding: 4px;
+}
+
+.projects-menu .active {
+  color: var(--grey, #323232);
+
+  background: var(--yellow, #ffc412);
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+
+  margin-top: 49px;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.project {
+  display: flex;
+  gap: 64px;
+}
+
+.project-banner {
+  position: relative;
+  background-color: aliceblue;
+  width: 501px;
+  height: 302px;
+
+  border-radius: 10px;
+  border: none;
+  background: var(--grey, #323232);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+  padding: 24px;
+}
+
+.project-icon {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+
+  border-radius: 15px;
+  background: var(--gray-2, #4f4f4f);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  width: 61px;
+  height: 61px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-info h3 {
+  color: var(--white, #e5e6e0);
+  font-family: Aleo;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.project-info .tag1 {
+  border-radius: 3px;
+  background: var(--red, #eb5757);
+  padding: 4px 8px;
+}
+.project-info .tag2 {
+  border-radius: 3px;
+  background: var(--blue, #3c4ea4);
+  padding: 4px 8px;
+}
+.project-info .tag3 {
+  border-radius: 3px;
+  background: var(--green, #16805a);
+  padding: 4px 8px;
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+.project-info .project-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.project-info .links {
+  color: var(--white, #e5e6e0);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 760px) {
+  .projects-menu ul {
+    gap: 8px;
+  }
+
+  .projects-menu input {
+    width: 25px;
+  }
+
+  .project {
+    flex-direction: column !important;
+    gap: 16px;
+  }
+
+  .project-banner {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-info {
+    margin-left: 10px;
+  }
+
+  .projects-wrapper {
+    gap: 48px;
+  }
+}

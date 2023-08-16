@@ -32,12 +32,13 @@ body {
 }
 
 .section-padding {
-  padding: 50px 158px;
+  padding: 6rem 158px 0;
 }
 
 @media screen and (max-width: 1024px) {
   .section-padding {
-    padding: 50px 52px;
+    padding: 6rem 52px 0;
+    /* padding-top: 4rem; */
   }
 }
 
@@ -49,6 +50,6 @@ body {
 
 @media screen and (max-width: 480px) {
   .section-padding {
-    padding: 50px 32px;
+    padding: 6rem 32px 0;
   }
 }
