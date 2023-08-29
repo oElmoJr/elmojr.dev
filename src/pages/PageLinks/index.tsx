@@ -1,4 +1,4 @@
-import "./styles.css";
+import './styles.css';
 
 import {
   linkedin,
@@ -7,24 +7,23 @@ import {
   telegram,
   instagram,
   twitter,
-} from "./inports";
-import profilePhoto from "../../assets/SquarePhoto.png";
+} from './inports';
+import profilePhoto from '../../assets/SquarePhoto.png';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import Heading1 from '../../components/Heading1';
 
 export default function PageLinks() {
   const navigate = useNavigate();
 
-  document.title = "ElmoJr | Links";
+  document.title = 'ElmoJr | Links';
 
   return (
     <div className="pagelinks-main-container">
       <div className="pagelinks-heading-container">
         <img src={profilePhoto} alt="" />
         <div className="pagelinks-title-container">
-          <h1>
-            ElmoJr<span>.</span>
-          </h1>
+          <Heading1>ElmoJr.</Heading1>
           <div className="pagelinks-jobtitle-container">
             <p>FontEnd developer</p>
           </div>
@@ -32,7 +31,7 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        <button disabled onClick={() => navigate("/portfolio")}>
+        <button disabled onClick={() => navigate('/portfolio')}>
           Portfólio
         </button>
 

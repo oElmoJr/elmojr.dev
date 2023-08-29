@@ -17,7 +17,7 @@
 }
 
 .about-info-container p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 1rem;
   line-height: 1.5em;
 }
@@ -27,11 +27,11 @@
   align-items: center;
   gap: 1rem;
 
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .about-link-container a {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2em;
@@ -71,9 +71,5 @@
     margin: 0;
     width: 100%;
     gap: 0.5rem;
-  }
-
-  .about-link-container a {
-    margin-top: 1rem;
   }
 }

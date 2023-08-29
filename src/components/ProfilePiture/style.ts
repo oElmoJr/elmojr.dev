@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const profilePhoto = require("../../assets/Foto.png");
+const profilePhoto = require('../../assets/Foto.png');
 
 export const Image = styled.div`
   width: 110px;

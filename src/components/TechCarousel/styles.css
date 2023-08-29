@@ -3,9 +3,13 @@
   transition-timing-function: linear !important;
 }
 
+.swiper-wrapper img {
+  height: 60px;
+}
+
 @media screen and (max-width: 640px) {
   .swiper-wrapper img {
-    height: 65px;
+    height: 50px;
   }
 }
 

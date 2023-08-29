@@ -1,0 +1,19 @@
+h3 {
+  font-family: Sarabun;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 1.5rem;
+}
+
+span {
+  color: gold;
+}
+
+@media screen and (max-width: 640px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}

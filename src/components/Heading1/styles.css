@@ -1,0 +1,26 @@
+.pagelinks-title-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Bungee';
+  font-size: 3.5rem;
+  font-style: normal;
+  line-height: 3.5rem;
+
+  margin-bottom: 0.1em;
+}
+
+::selection {
+  line-height: 3.5rem;
+}
+
+span {
+  color: gold;
+}
+
+@media screen and (max-width: 640px) {
+  .pagelinks-title-container h1 {
+    font-size: 3.5rem;
+  }
+}

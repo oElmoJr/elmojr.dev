@@ -1,13 +1,11 @@
-import "./styles.css";
+import Heading0 from '../../components/Heading0';
+import './styles.css';
 
 export default function Header() {
   return (
     <div id="home" className="header-container">
       <div className="header-title-container">
-        <h1>
-          Oi<span className="yellow">,</span> eu sou o ElmoJr
-          <span className="yellow">.</span>
-        </h1>
+        <Heading0>Oi, eu sou o ElmoJr.</Heading0>
         <p>Frontend Developer</p>
       </div>
     </div>

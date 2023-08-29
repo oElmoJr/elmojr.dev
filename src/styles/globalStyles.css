@@ -31,8 +31,13 @@ body {
   color: #ffc412;
 }
 
+::selection {
+  color: #202020;
+  background: #daa520;
+}
+
 .section-padding {
-  padding: 6rem 158px 0;
+  padding: 6rem 158px;
 }
 
 @media screen and (max-width: 1024px) {

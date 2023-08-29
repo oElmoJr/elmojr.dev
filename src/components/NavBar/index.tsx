@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import React, { useState } from 'react';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
-import "./styles.css";
-import logo from "../../assets/logo.svg";
+import './styles.css';
+import logo from '../../assets/logo.svg';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Menu = (): any => {
   const navigate = useNavigate();
@@ -20,12 +20,9 @@ const Menu = (): any => {
         <a href="#services">Serviços</a>
       </p>
       <p>
-        <a href="#tech">Tecnologias</a>
-      </p>
-      <p>
         <a href="#projects">Portifólio</a>
       </p>
-      <p onClick={() => navigate("/")}>
+      <p onClick={() => navigate('/')}>
         <a>Contato</a>
       </p>
     </>

@@ -1,31 +1,27 @@
-import React from "react";
+import React from 'react';
 
-import * as Popover from "@radix-ui/react-popover";
-import "./styles.css";
+import * as Popover from '@radix-ui/react-popover';
+import Heading3 from '../Heading3';
+import { icons } from './icons';
+import './styles.css';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Autoplay } from "swiper";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y, Autoplay } from 'swiper';
+import 'swiper/css';
 
-import { icons } from "./icons";
-import Title from "../../components/Title";
-import "./styles.css";
-
-export default function Tech() {
+export default function TechCarousel() {
   return (
-    <div id="tech" className="techa-container section-padding">
-      <Title>Tecnologias que uso:</Title>
-
+    <div className="techa-container ">
       <Swiper
         className="mySwiper"
         modules={[Autoplay, A11y]}
-        slidesPerView={4.5}
-        spaceBetween={5}
+        slidesPerView={6}
+        spaceBetween={60}
         speed={3000}
         loop={true}
         preventClicks={false}
         autoplay={{ delay: 0, disableOnInteraction: false }}
-        breakpoints={{ 768: { width: 768, slidesPerView: 8 } }}
+        breakpoints={{ 768: { width: 768, slidesPerView: 10 } }}
       >
         {
           /* repeat 2x */
@@ -44,10 +40,7 @@ export default function Tech() {
                           className="PopoverContent"
                           sideOffset={5}
                         >
-                          <h3>
-                            {e.name}
-                            <span className="yellow">:</span>
-                          </h3>
+                          <Heading3>{e.name + ':'}</Heading3>
                           {e.desc}
                         </Popover.Content>
                       </Popover.Portal>

@@ -1,13 +1,13 @@
-import "./styles.css";
-import photo from "../../assets/Foto.png";
-import Title from "../../components/Title";
+import './styles.css';
+import photo from '../../assets/Foto.png';
+import Heading2 from '../../components/Heading2';
 
 export default function About() {
   return (
     <div id="about" className="about-container section-padding">
       <img src={photo} alt="Uma foto minha" />
       <div className="about-info-container">
-        <Title>Sobre mim:</Title>
+        <Heading2>Sobre mim:</Heading2>
         <p>
           Sou estudante de Ciência da Computação na UNESA. Tenho um grande
           interesse pela tecnologia, especialmente pelo desenvolvimento web e

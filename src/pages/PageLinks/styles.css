@@ -28,19 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.pagelinks-title-container h1 {
-  font-family: "Aleo";
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 64px;
-
-  color: #ffffff;
-}
-
-.pagelinks-title-container span {
-  color: #ffc412;
+  margin-left: 0.5em;
 }
 
 .pagelinks-jobtitle-container {
@@ -56,7 +44,7 @@
 }
 
 .pagelinks-jobtitle-container p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 14px;
   line-height: 16px;
   text-align: center;

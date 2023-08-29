@@ -1,10 +1,10 @@
-import Title from "../../components/Title";
-import "./styles.css";
+import Heading2 from '../../components/Heading2';
+import './styles.css';
 
 export default function Projects() {
   return (
     <div className="section-padding" id="projects">
-      <Title>Portifolio:</Title>
+      <Heading2>Portifolio:</Heading2>
       <div className="projects-menu">
         <ul>
           <li>

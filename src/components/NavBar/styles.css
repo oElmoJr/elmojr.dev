@@ -86,7 +86,6 @@
 
     background-color: #323232;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border: 1px solid #4f4f4f;
 
     border-radius: 8px;
 
@@ -102,7 +101,6 @@
   .navbar-menu-container-links p:last-child {
     background-color: #ffc412;
     border-radius: 50px;
-    border: 1px solid #4f4f4f;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 
     margin-top: 0.5em;

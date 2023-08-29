@@ -1,32 +1,46 @@
-import "./styles.css";
+import './styles.css';
 
-import UXDESIGN from "./assets/UX-DESIGN.png";
-import FRONTEND from "./assets/FRONT-END.png";
-import RESPONSIVIDADE from "./assets/RESPONSIVIDADE.png";
-import ACESSIBILIDADE from "./assets/ACESSIBILIDADE.png";
-import Title from "../../components/Title";
+import UXDESIGN from './assets/UX-DESIGN.png';
+import FRONTEND from './assets/FRONT-END.png';
+import RESPONSIVIDADE from './assets/RESPONSIVIDADE.png';
+import ACESSIBILIDADE from './assets/ACESSIBILIDADE.png';
+
+import ServiceCard from '../../components/ServiceCard';
+import Tech from '../../components/TechCarousel';
+import Heading2 from '../../components/Heading2';
+import Heading3 from '../../components/Heading3';
 
 export default function Services() {
   return (
     <div id="services" className="services-container section-padding">
-      <Title>O que eu faço:</Title>
+      <Heading2>O que eu faço:</Heading2>
+
       <div className="services-cards-container">
-        <div className="services-card">
-          <img src={UXDESIGN} alt="" />
-          <p>UI/UX DESIGN</p>
-        </div>
-        <div className="services-card">
-          <img src={FRONTEND} alt="" />
-          <p>FRONT-END</p>
-        </div>
-        <div className="services-card">
-          <img src={RESPONSIVIDADE} alt="" />
-          <p>RESPONSIVIDADE</p>
-        </div>
-        <div className="services-card">
-          <img src={ACESSIBILIDADE} alt="" />
-          <p>ACESSIBILIDADE</p>
-        </div>
+        <ServiceCard
+          cardImage={UXDESIGN}
+          title="UI/UX DESIGN"
+          description="processo de criar experiências digitais funcionais e atrativas."
+        />
+        <ServiceCard
+          cardImage={FRONTEND}
+          title="FRONT-END"
+          description="Desenvolvimento da interface visível ao usuário em um site ou aplicativo."
+        />
+        <ServiceCard
+          cardImage={RESPONSIVIDADE}
+          title="RESPONSIVIDADE"
+          description="Adaptação do design para diferentes dispositivos e telas."
+        />
+        <ServiceCard
+          cardImage={ACESSIBILIDADE}
+          title="ACESSIBILIDADE"
+          description="Garantia de que produtos digitais sejam usáveis para todos."
+        />
+      </div>
+
+      <div>
+        <Heading3>Experiencias:</Heading3>
+        <Tech />
       </div>
     </div>
   );
