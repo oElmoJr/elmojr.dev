@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Popover from '@radix-ui/react-popover';
-import Heading3 from '../Heading3';
+import Heading3 from '../Typography/Heading3';
 import { icons } from './icons';
 import './styles.css';
 

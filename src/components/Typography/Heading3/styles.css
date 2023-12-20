@@ -10,6 +10,7 @@ h3 {
 
 span {
   color: gold;
+  font-family: 'Sarabun';
 }
 
 @media screen and (max-width: 640px) {

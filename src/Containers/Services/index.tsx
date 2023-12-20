@@ -7,13 +7,13 @@ import ACESSIBILIDADE from './assets/ACESSIBILIDADE.png';
 
 import ServiceCard from '../../components/ServiceCard';
 import Tech from '../../components/TechCarousel';
-import Heading2 from '../../components/Heading2';
-import Heading3 from '../../components/Heading3';
+import Heading2 from '../../components/Typography/Heading2';
+import Heading3 from '../../components/Typography/Heading3';
 
 export default function Services() {
   return (
     <div id="services" className="services-container section-padding">
-      <Heading2>O que eu faço:</Heading2>
+      <Heading2>Serviços:</Heading2>
 
       <div className="services-cards-container">
         <ServiceCard

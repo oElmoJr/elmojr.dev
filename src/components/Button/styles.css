@@ -1,0 +1,23 @@
+.contacts_btn {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+
+  color: #e5e6e0;
+  background: var(--gray-600, #323232);
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+}
+
+.active {
+  color: #323232;
+  background-color: #ffc412;
+}
+
+.contacts_btn:hover {
+  opacity: 0.7;
+}

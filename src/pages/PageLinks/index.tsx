@@ -11,7 +11,8 @@ import {
 import profilePhoto from '../../assets/SquarePhoto.png';
 
 import { useNavigate } from 'react-router-dom';
-import Heading1 from '../../components/Heading1';
+import Heading1 from '../../components/Typography/Heading1';
+import Button from '../../components/Button';
 
 export default function PageLinks() {
   const navigate = useNavigate();
@@ -24,16 +25,12 @@ export default function PageLinks() {
         <img src={profilePhoto} alt="" />
         <div className="pagelinks-title-container">
           <Heading1>ElmoJr.</Heading1>
-          <div className="pagelinks-jobtitle-container">
-            <p>FontEnd developer</p>
-          </div>
+          <Button buttonClass={'active'}>Desenvolvedor Front-end</Button>
         </div>
       </div>
 
       <div className="pagelinks-links-container">
-        <button disabled onClick={() => navigate('/portfolio')}>
-          Portfólio
-        </button>
+        <button onClick={() => navigate('/portfolio')}>Portfólio</button>
 
         <div className="pagelinks-socialLinks-container">
           <a target="_blank" href="https://www.linkedin.com/in/elmojr/">

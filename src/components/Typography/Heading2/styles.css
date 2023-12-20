@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Sarabun';
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.1em;
@@ -9,6 +9,7 @@ h2 {
 
 span {
   color: gold;
+  font-family: 'Sarabun';
 }
 
 @media screen and (max-width: 640px) {

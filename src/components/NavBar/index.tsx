@@ -5,6 +5,7 @@ import './styles.css';
 import logo from '../../assets/logo.svg';
 
 import { useNavigate } from 'react-router-dom';
+import Button from '../Button';
 
 const Menu = (): any => {
   const navigate = useNavigate();
@@ -22,9 +23,15 @@ const Menu = (): any => {
       <p>
         <a href="#projects">Portifólio</a>
       </p>
-      <p onClick={() => navigate('/')}>
-        <a>Contato</a>
-      </p>
+
+      <Button
+        click={() => {
+          navigate('/');
+        }}
+        buttonClass={'active'}
+      >
+        Contato
+      </Button>
     </>
   );
 };

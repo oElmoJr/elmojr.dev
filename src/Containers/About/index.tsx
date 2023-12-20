@@ -1,6 +1,8 @@
 import './styles.css';
 import photo from '../../assets/Foto.png';
-import Heading2 from '../../components/Heading2';
+import Heading2 from '../../components/Typography/Heading2';
+import Button from '../../components/Button';
+import Body from '../../components/Typography/Body';
 
 export default function About() {
   return (
@@ -8,26 +10,28 @@ export default function About() {
       <img src={photo} alt="Uma foto minha" />
       <div className="about-info-container">
         <Heading2>Sobre mim:</Heading2>
-        <p>
+        <Body>
           Sou estudante de Ciência da Computação na UNESA. Tenho um grande
           interesse pela tecnologia, especialmente pelo desenvolvimento web e
           frontend. Essa paixão me impulsionou a seguir esse caminho e aprimorar
           minhas habilidades.
-          <br />
-          <br />
+        </Body>
+        <br />
+        <Body>
           Durante minha jornada, tive a oportunidade de desenvolver vários
           projetos utilizando as principais linguagens e tecnologias para a web.
           Essas experiências me deram um conhecimento prático sólido,
           permitindo-me explorar diferentes abordagens e encontrar soluções
           criativas para desafios complexos.
-          <br />
-          <br />
+        </Body>
+        <br />
+        <Body>
           Estou sempre em busca de novas oportunidades para expandir meu
           conhecimento e aprimorar minhas habilidades. Sou entusiasta e adoro
           aprender e aplicar as últimas tendências e melhores práticas do setor.
-        </p>
+        </Body>
         <div className="about-link-container">
-          <a href="#">Baixar CV</a>
+          <Button buttonClass={'active'}>Baixar CV</Button>
           <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
             LinkedIn
           </a>

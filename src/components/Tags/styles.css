@@ -1,0 +1,56 @@
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+
+  list-style: none;
+  gap: 0.5em;
+}
+
+.taglist p {
+  padding: 0.2em 0.5em;
+}
+
+.taglist .web {
+  background-color: #eb5757;
+}
+
+.taglist .react {
+  display: flex;
+  align-items: center;
+  background-color: #3c4ea4;
+}
+
+.taglist .react::before {
+  content: url(./assets/icons/react.svg);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 5px;
+}
+
+.taglist .node {
+  display: flex;
+  align-items: center;
+  background-color: #16805a;
+}
+
+.taglist .node::before {
+  content: url(./assets/icons/node.svg);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 5px;
+}
+
+.taglist .mongodb {
+  display: flex;
+  align-items: center;
+  background-color: #3b833d;
+}
+
+.taglist .mongodb::before {
+  content: url(./assets/icons/mongo.svg);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 5px;
+}

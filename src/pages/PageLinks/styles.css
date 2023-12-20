@@ -28,28 +28,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
   margin-left: 0.5em;
 }
 
-.pagelinks-jobtitle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50px;
-  background-color: #ffc412;
-
-  width: 152px;
-  height: 24px;
-}
-
-.pagelinks-jobtitle-container p {
-  font-family: 'Roboto';
-  font-size: 14px;
+.pagelinks-title-container p {
+  font-size: 0.9rem;
   line-height: 16px;
   text-align: center;
+  cursor: text;
 
   color: #000000;
+}
+
+.pagelinks-title-container p:hover {
+  opacity: 1;
 }
 
 .pagelinks-links-container {
