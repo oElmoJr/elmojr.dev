@@ -1,4 +1,5 @@
 import './styles.css';
+import * as React from 'react';
 
 import {
   linkedin,
@@ -13,11 +14,42 @@ import profilePhoto from '../../assets/SquarePhoto.png';
 import { useNavigate } from 'react-router-dom';
 import Heading1 from '../../components/Typography/Heading1';
 import Button from '../../components/Button';
+import { Alert, IconButton, Snackbar } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 export default function PageLinks() {
   const navigate = useNavigate();
 
   document.title = 'ElmoJr | Links';
+
+    const [open, setOpen] = React.useState(false);
+  
+    const handleClick = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+      if (reason === 'clickaway') {
+        return;
+      }
+  
+      setOpen(false);
+    };
+
+    const action = (
+      <>
+        <IconButton
+          size="small"
+          aria-label="close"
+          color="inherit"
+          onClick={handleClose}
+        >
+          <CloseIcon fontSize="small" />
+        </IconButton>
+      </>
+    );
+
 
   return (
     <div className="pagelinks-main-container">
@@ -30,7 +62,11 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        <button onClick={() => navigate('/portfolio')}>Portfólio</button>
+      
+        <button  onClick={handleClick}>Portfólio</button>
+        {/* <button disabled onClick={() => navigate('/portfolio')}>Portfólio</button> */}
+      
+    
 
         <div className="pagelinks-socialLinks-container">
           <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
@@ -58,6 +94,18 @@ export default function PageLinks() {
           </a>
         </div>
       </div>
+      
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        action={action}
+    >
+      <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
+        Em Construção
+     </Alert>
+  </Snackbar>
+
     </div>
   );
 }
