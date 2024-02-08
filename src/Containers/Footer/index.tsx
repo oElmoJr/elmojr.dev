@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
-import Heading2 from '../../components/Typography/Heading2';
+import Heading3 from '../../components/Typography/Heading3';
 import './styles.css';
 
 export default function Footer() {
@@ -9,13 +9,12 @@ export default function Footer() {
     <div className="section-padding">
       <div className="footer">
         <div className="footer-container">
-          <Heading2>Vamos conversar sobre o seu projeto?</Heading2>
+          <Heading3>Vamos conversar sobre o seu projeto?</Heading3>
           <Button
             buttonClass={'active'}
             click={() => {
               navigate('/');
-            }}
-          >
+            }}>
             Contatos
           </Button>
         </div>
