@@ -8,6 +8,10 @@
   gap: 0.5em;
 }
 
+.hide li:nth-child(n + 5) {
+  display: none;
+}
+
 .taglist p {
   padding: 0.2em 0.5em;
 }

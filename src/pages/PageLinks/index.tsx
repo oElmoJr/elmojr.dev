@@ -48,8 +48,8 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        {/* <button onClick={handleClick}>Portfólio</button> */}
-        <button onClick={() => navigate('/portfolio')}>Portfólio</button>
+        <button onClick={handleClick}>Portfólio</button>
+        {/* <button onClick={() => navigate('/portfolio')}>Portfólio</button> */}
 
         <div className="pagelinks-socialLinks-container">
           <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
