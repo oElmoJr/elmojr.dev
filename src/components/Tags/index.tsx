@@ -1,4 +1,5 @@
 import Button from '../Button';
+
 import './styles.css';
 
 type TagsProps = {
@@ -18,7 +19,7 @@ export default function Tags({ taglist, id }: TagsProps) {
           <Button buttonClass={`${tag}`}>{tag}</Button>
         </li>
       ))}
-      <Button click={() => showMore(id)}>+</Button>
+      <Button click={() => showMore(id)}>...</Button>
     </ul>
   );
 }
