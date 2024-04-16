@@ -1,19 +1,26 @@
-import './styles.css';
-import * as React from 'react';
+import "./styles.css";
+import * as React from "react";
 
-import { useNavigate } from 'react-router-dom';
-import { Alert, IconButton, Snackbar } from '@mui/material';
-import { linkedin, github, email, telegram, instagram, twitter } from './inports';
+import { useNavigate } from "react-router-dom";
+import { Alert, IconButton, Snackbar } from "@mui/material";
+import {
+  linkedin,
+  github,
+  email,
+  telegram,
+  instagram,
+  twitter,
+} from "./inports";
 
-import profilePhoto from '../../assets/SquarePhoto.png';
-import CloseIcon from '@mui/icons-material/Close';
-import Heading1 from '../../components/Typography/Heading1';
-import Button from '../../components/Button';
+import profilePhoto from "../../assets/SquarePhoto.png";
+import CloseIcon from "@mui/icons-material/Close";
+import Heading1 from "../../components/Typography/Heading1";
+import Button from "../../components/Button";
 
 export default function PageLinks() {
   const navigate = useNavigate();
 
-  document.title = 'ElmoJr | Links';
+  document.title = "ElmoJr | Links";
 
   const [open, setOpen] = React.useState(false);
 
@@ -21,8 +28,11 @@ export default function PageLinks() {
     setOpen(true);
   };
 
-  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
-    if (reason === 'clickaway') {
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
       return;
     }
 
@@ -31,7 +41,12 @@ export default function PageLinks() {
 
   const action = (
     <>
-      <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
         <CloseIcon fontSize="small" />
       </IconButton>
     </>
@@ -43,13 +58,13 @@ export default function PageLinks() {
         <img src={profilePhoto} alt="" />
         <div className="pagelinks-title-container">
           <Heading1>ElmoJr.</Heading1>
-          <Button buttonClass={'active'}>Desenvolvedor Front-end</Button>
+          <Button buttonClass={"active"}>Desenvolvedor Front-end</Button>
         </div>
       </div>
 
       <div className="pagelinks-links-container">
-        <button onClick={handleClick}>Portfólio</button>
-        {/* <button onClick={() => navigate('/portfolio')}>Portfólio</button> */}
+        {/* <button onClick={handleClick}>Portfólio</button> */}
+        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
 
         <div className="pagelinks-socialLinks-container">
           <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
@@ -82,8 +97,9 @@ export default function PageLinks() {
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        action={action}>
-        <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
+        action={action}
+      >
+        <Alert onClose={handleClose} severity="warning" sx={{ width: "100%" }}>
           Em Construção
         </Alert>
       </Snackbar>
