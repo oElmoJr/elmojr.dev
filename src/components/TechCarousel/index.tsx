@@ -1,57 +1,59 @@
-import React from 'react';
+import React from "react";
 
-import * as Popover from '@radix-ui/react-popover';
-import Heading3 from '../Typography/Heading3';
-import { icons } from './icons';
-import './styles.css';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Autoplay } from 'swiper';
-import 'swiper/css';
+import * as Popover from "@radix-ui/react-popover";
+import Heading3 from "../Typography/Heading3";
+import { icons } from "./icons";
+import "./styles.css";
 
 export default function TechCarousel() {
+  const scrollers = document.querySelectorAll(".scroller");
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+
+  function addAnimation() {
+    scrollers.forEach((scroller) => {
+      scroller.setAttribute("data-animated", `${true}`);
+    });
+  }
+
   return (
-    <div className="techa-container ">
-      <Swiper
-        className="mySwiper"
-        modules={[Autoplay, A11y]}
-        slidesPerView={6}
-        spaceBetween={60}
-        speed={3000}
-        loop={true}
-        preventClicks={false}
-        autoplay={{ delay: 0, disableOnInteraction: false }}
-        breakpoints={{ 768: { width: 768, slidesPerView: 10 } }}
-      >
-        {
-          /* repeat 2x */
-          [1, 2].map((repetiçao, i) => (
-            <React.Fragment key={repetiçao + i}>
-              {
-                /* icons */
-                icons.map((e) => (
-                  <SwiperSlide key={e.name + i}>
-                    <Popover.Root>
-                      <Popover.Trigger>
-                        <img src={e.img} alt={`${e.name}: ${e.desc}`} />
-                      </Popover.Trigger>
-                      <Popover.Portal>
-                        <Popover.Content
-                          className="PopoverContent"
-                          sideOffset={5}
-                        >
-                          <Heading3>{e.name + ':'}</Heading3>
-                          {e.desc}
-                        </Popover.Content>
-                      </Popover.Portal>
-                    </Popover.Root>
-                  </SwiperSlide>
-                ))
-              }
-            </React.Fragment>
-          ))
-        }
-      </Swiper>
+    <div className="scroller">
+      <ul className="tag-list scroller__inner">
+        {icons.map((icon) => (
+          <li>
+            <Popover.Root>
+              <Popover.Trigger>
+                <img src={icon.img} alt={`${icon.name}: ${icon.desc}`} />
+              </Popover.Trigger>
+              <Popover.Portal>
+                <Popover.Content className="PopoverContent" sideOffset={5}>
+                  <Heading3>{icon.name + ":"}</Heading3>
+                  {icon.desc}
+                </Popover.Content>
+              </Popover.Portal>
+            </Popover.Root>
+          </li>
+        ))}
+
+        {!window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? icons.map((icon) => (
+              <li aria-hidden="true">
+                <Popover.Root>
+                  <Popover.Trigger>
+                    <img src={icon.img} alt={`${icon.name}: ${icon.desc}`} />
+                  </Popover.Trigger>
+                  <Popover.Portal>
+                    <Popover.Content className="PopoverContent" sideOffset={5}>
+                      <Heading3>{icon.name + ":"}</Heading3>
+                      {icon.desc}
+                    </Popover.Content>
+                  </Popover.Portal>
+                </Popover.Root>
+              </li>
+            ))
+          : ""}
+      </ul>
     </div>
   );
 }
