@@ -11,7 +11,6 @@ import Tags from '../../components/Tags';
 
 
 export default function Projects() {
-<<<<<<< HEAD
   const exempleProjects = {
     images: {
       icon: 'https://camo.githubusercontent.com/fb5819b9118e5524d2cc1984e6a04584464f4f3291c93710905fe2189000ab4d/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3831383937393635353034363236363838322f313135323337323738353030303232363936382f37396461363164382d623036362d346634322d623566322d6437333063376561396466312e706e67',
@@ -46,9 +45,6 @@ export default function Projects() {
         setErro(true);
       });
   }, []);
-=======
-
->>>>>>> main
 
   return (
     <div className="section-padding" id="projects">
@@ -78,7 +74,6 @@ export default function Projects() {
       <div className="projects-container">
         {"projeto do portifolio estatico"}
 
-<<<<<<< HEAD
         {projects.map((project: any) => {
         return (
             <div key={project.id} className="project">
@@ -107,9 +102,6 @@ export default function Projects() {
             </div>
           );
         })}
-=======
-      
->>>>>>> main
       </div>
     </div>
   );
