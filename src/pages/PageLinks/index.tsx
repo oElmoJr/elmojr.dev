@@ -63,7 +63,6 @@ export default function PageLinks() {
       </div>
 
       <div className="pagelinks-links-container">
-        {/* <button onClick={handleClick}>Portfólio</button> */}
         <button onClick={() => navigate("/portfolio")}>Portfólio</button>
 
         <div className="pagelinks-socialLinks-container">
