@@ -3,43 +3,48 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import './styles.css';
 import Heading2 from '../../components/Typography/Heading2';
+import Heading3 from '../../components/Typography/Heading3';
+import Body from '../../components/Typography/Body';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Tags from '../../components/Tags';
 
 
 export default function Projects() {
-//   const exempleProjects = {
-//     images: {
-//       icon: 'https://camo.githubusercontent.com/fb5819b9118e5524d2cc1984e6a04584464f4f3291c93710905fe2189000ab4d/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3831383937393635353034363236363838322f313135323337323738353030303232363936382f37396461363164382d623036362d346634322d623566322d6437333063376561396466312e706e67',
-//       cover:
-//         'https://github.com/oElmoJr/TaskCalendar/raw/main/assets/images/Anima%C3%A7%C3%A3o.gif',
-//     },
-//   };
+  const exempleProjects = {
+    images: {
+      icon: 'https://camo.githubusercontent.com/fb5819b9118e5524d2cc1984e6a04584464f4f3291c93710905fe2189000ab4d/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3831383937393635353034363236363838322f313135323337323738353030303232363936382f37396461363164382d623036362d346634322d623566322d6437333063376561396466312e706e67',
+      cover:
+        'https://github.com/oElmoJr/TaskCalendar/raw/main/assets/images/Anima%C3%A7%C3%A3o.gif',
+    },
+  };
 
-  // const [erro, setErro] = useState(false);
-  // const [projects, setProjects] = useState([]);
+  const [erro, setErro] = useState(false);
+  const [projects, setProjects] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`https://api.github.com/users/oelmojr/repos`)
-  //     .then((Response: any) => {
-  //       const repositories = Response.data;
-  //       const repositoriesInfo: any = [];
+  useEffect(() => {
+    axios
+      .get(`https://api.github.com/users/oelmojr/repos`)
+      .then((Response: any) => {
+        const repositories = Response.data;
+        const repositoriesInfo: any = [];
 
-  //       const filteredRepositories = repositories.filter((repo: any) => {
-  //         return repo.topics.includes('portfolio');
-  //       });
+        const filteredRepositories = repositories.filter((repo: any) => {
+          return repo.topics.includes('portfolio');
+        });
 
-  //       filteredRepositories.map((repository: any) => {
-  //         repositoriesInfo.push(repository);
-  //         return '';
-  //       });
+        filteredRepositories.map((repository: any) => {
+          repositoriesInfo.push(repository);
+          return '';
+        });
 
-  //       setProjects(repositoriesInfo);
-  //       setErro(false);
-  //     })
-  //     .catch((err: any) => {
-  //       setErro(true);
-  //     });
-  // }, []);
+        setProjects(repositoriesInfo);
+        setErro(false);
+      })
+      .catch((err: any) => {
+        setErro(true);
+      });
+  }, []);
 
   return (
     <div className="section-padding" id="projects">
@@ -69,7 +74,7 @@ export default function Projects() {
       <div className="projects-container">
         {"projeto do portifolio estatico"}
 
-        {/* {projects.map((project: any) => {
+        {projects.map((project: any) => {
         return (
             <div key={project.id} className="project">
               <div className="project-banner">
@@ -96,7 +101,7 @@ export default function Projects() {
               </div>
             </div>
           );
-        })} */}
+        })}
       </div>
     </div>
   );
