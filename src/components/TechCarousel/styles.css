@@ -8,11 +8,13 @@
   background-color: #323232;
   padding: 1rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .tag-list button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .tag-list img {
