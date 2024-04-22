@@ -28,7 +28,7 @@ export default function TechCarousel() {
     <div className="scroller">
       <ul className="tag-list scroller__inner">
         {icons.map((icon) => (
-          <li onLoad={() => (setAtualiza(true))}>
+          <li onLoad={() => (setAtualiza(true))} key={icon.name + "1"}>
             <Popover.Root>
               <Popover.Trigger>
                 <img src={icon.img} alt={`${icon.name}: ${icon.desc}`} />
@@ -45,7 +45,7 @@ export default function TechCarousel() {
         
         {!window.matchMedia("(prefers-reduced-motion: reduce)").matches
           ? icons.map((icon) => (
-              <li aria-hidden={true}>
+              <li aria-hidden={true} key={icon.name + "2"}>
                 <Popover.Root>
                   <Popover.Trigger>
                     <img src={icon.img} alt={`${icon.name}: ${icon.desc}` }  />
