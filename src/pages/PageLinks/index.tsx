@@ -10,6 +10,9 @@ import {
   telegram,
   instagram,
   twitter,
+  goodreads,
+  spotify,
+  pinterest,
 } from "./inports";
 
 import profilePhoto from "../../assets/SquarePhoto.png";
@@ -70,17 +73,6 @@ export default function PageLinks() {
             <img src={linkedin} alt="Twiter icon" />
           </a>
 
-          <a target="_blank" href="https://github.com/oElmoJr">
-            <img src={github} alt="GitHub icon" />
-          </a>
-
-          <a target="_blank" href="mailto:elmojrdv@gmail.com">
-            <img src={email} alt="Email icon" />
-          </a>
-
-          <a target="_blank" href="https://t.me/oElmoJr">
-            <img src={telegram} alt="Telegram icon" />
-          </a>
 
           <a target="_blank" href="https://instagram.com/_elmojr">
             <img src={instagram} alt="Instagram icon" />
@@ -88,6 +80,31 @@ export default function PageLinks() {
 
           <a target="_blank" href="https://twitter.com/_ElmoJr">
             <img src={twitter} alt="Twitter icon" />
+          </a>
+
+          <a target="_blank" href="https://github.com/oElmoJr">
+            <img src={github} alt="GitHub icon" />
+          </a>
+
+
+          <a target="_blank" href="https://t.me/oElmoJr">
+            <img src={telegram} alt="Telegram icon" />
+          </a>
+
+
+          <a target="_blank" href="mailto:elmojrdv@gmail.com">
+            <img src={email} alt="Email icon" />
+          </a>
+
+          <a target="_blank" href="https://open.spotify.com/user/elmojunior35?si=7bbb377b42794199">
+            <img src={spotify} alt="spotify icon" />
+          </a>
+          
+          <a target="_blank" href="https://pin.it/5XZ5RrboO">
+            <img src={pinterest} alt="pinterest icon" />
+          </a>
+          <a target="_blank" href="https://www.goodreads.com/_elmojr">
+            <img src={goodreads} alt="goodreads icon" />
           </a>
         </div>
       </div>
