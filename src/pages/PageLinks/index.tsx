@@ -50,7 +50,7 @@ export default function PageLinks() {
         color="inherit"
         onClick={handleClose}
       >
-        <CloseIcon fontSize="small" />
+        <CloseIcon className="closeIcon" fontSize="small" />
       </IconButton>
     </>
   );
@@ -65,7 +65,8 @@ export default function PageLinks() {
         </div>
       </div>
 
-        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
+        {/* <button onClick={() => navigate("/portfolio")}>Portfólio</button> */}
+        <button onClick={() => handleClick()} >Portfólio</button>
       
       <div className="pagelinks-links-container">
         <div className="pagelinks-socialLinks-container">
@@ -116,7 +117,7 @@ export default function PageLinks() {
         action={action}
       >
         <Alert onClose={handleClose} severity="warning" sx={{ width: "100%" }}>
-          Em Construção
+          Em Construção 🚧
         </Alert>
       </Snackbar>
     </div>

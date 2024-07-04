@@ -133,3 +133,9 @@
   }
 }
 
+.MuiAlert-action button  {
+  color: unset;
+  background: none ;
+  height: 30px;
+  box-shadow: none;
+}
