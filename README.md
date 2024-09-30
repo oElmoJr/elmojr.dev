@@ -57,10 +57,10 @@ Para alimentar o meu portfólio, utilizo dados diretamente do GitHub. Aqui estã
   <img id="icon" alt=" old Icon" src="./src/assets/README/old_logo.jpg">
 
   <img height="330" align="right" id="banner" alt="Banner" src="src/assets/README/print_pagelinks_mobile.jpg" >
-  <img height="330" id="" alt="Banner" src="src/assets/README/print_pagelinks_web.jpeg">
+  <img height="330" id="" alt="Banner" src="src/assets/README/print_pagelinks_web.png">
   
   <img height="330" align="right" src="src/assets/README/print_portfolio_mobile.jpg"/>
-  <img height="330" src="src/assets/README/print_portfolio_web.jpg"/>
+  <img height="330" src="src/assets/README/print_portfolio_web.png"/>
 
 <h2 id="autor" >Autor</h2>
 
