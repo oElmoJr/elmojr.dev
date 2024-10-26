@@ -4,18 +4,18 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { Alert, IconButton, Snackbar } from "@mui/material";
 import {
+  email,
   linkedin,
   github,
-  email,
   telegram,
   instagram,
-  twitter,
+  threads,
   goodreads,
-  spotify,
   pinterest,
-  elmobot,
+  spotify,
   bluesky,
-  threads
+  twitter,
+  elmobot,
 } from "./inports";
 
 import profilePhoto from "../../assets/SquarePhoto.png";
@@ -23,7 +23,84 @@ import CloseIcon from "@mui/icons-material/Close";
 import Heading1 from "../../components/Typography/Heading1";
 import Button from "../../components/Button";
 
+
+let redes = [
+  {
+    'image': email,
+    'name': "Email",
+    'url': "mailto:elmojrdv@gmail.com"
+   },
+  {
+    'image': linkedin,
+    'name': "LinkedIn",
+    'url': "https://www.linkedin.com/in/elmojr/"
+   },
+  {
+    'image': github,
+    'name': "GitHub",
+    'url': "https://github.com/oElmoJr"
+   },
+  {
+    'image': telegram,
+    'name': "Telegram",
+    'url': "https://t.me/oElmoJr"
+   },
+  {
+    'image': instagram,
+    'name': "Instagram",
+    'url': "https://instagram.com/_elmojr"
+   },
+  {
+    'image': threads,
+    'name': "Threads",
+    'url': "https://www.threads.net/@_elmojr"
+   },
+   
+]
+
+let outrasRedes = [
+  {
+    'image': goodreads,
+    'name': "Goodreads",
+    'url': "https://www.goodreads.com/_elmojr"
+   },
+  {
+    'image': pinterest,
+    'name': "Pinterest",
+    'url': "https://pin.it/5XZ5RrboO"
+   },
+  {
+    'image': spotify,
+    'name': "Spotify",
+    'url': "https://open.spotify.com/user/elmojunior35?si=7bbb377b42794199"
+   },
+  {
+    'image': bluesky,
+    'name': "Bluesky",
+    'url': "https://bsky.app/profile/elmojr.dev"
+   },
+  {
+    'image': twitter,
+    'name': "Twitter",
+    'url': "https://twitter.com/_ElmoJr"
+   },
+  {
+    'image': elmobot,
+    'name': "Elmobot",
+    'url': "https://wa.me/558498470691?text=Oi,%20o%20que%20voce%20pode%20fazer?"
+   },
+   
+]
+
+
 export default function PageLinks() {
+  const [show, setShow] = React.useState(true);
+  
+  function showMore() {
+    document.querySelector(`#outrasRedes`)?.classList.toggle('hide');
+    setShow(!show)
+  }
+
   const navigate = useNavigate();
 
   document.title = "ElmoJr | Links";
@@ -73,58 +150,23 @@ export default function PageLinks() {
       
       <div className="pagelinks-links-container">
         <div className="pagelinks-socialLinks-container">
-          <a target="_blank" href="https://t.me/oElmoJr">
-            <img src={telegram} alt="Telegram icon" />
-          </a>
-
-          <a target="_blank" href="https://github.com/oElmoJr">
-            <img src={github} alt="GitHub icon" />
-          </a>
-
-          <a target="_blank" href="https://www.linkedin.com/in/elmojr/">
-            <img src={linkedin} alt="Twiter icon" />
-          </a>
-
-
-
-          <a target="_blank" href="https://instagram.com/_elmojr">
-            <img src={instagram} alt="Instagram icon" />
-          </a>
-
-          <a target="_blank" href="https://www.threads.net/@_elmojr">
-            <img src={threads} alt="Threads icon" />
-          </a>
-
-          <a target="_blank" href="mailto:elmojrdv@gmail.com">
-            <img src={email} alt="Email icon" />
-          </a>
-
-          <a target="_blank" href="https://bsky.app/profile/elmojr.dev">
-            <img src={bluesky} alt="BlueSky icon" />
-          </a>
-
-          <a target="_blank" href="https://pin.it/5XZ5RrboO">
-            <img src={pinterest} alt="pinterest icon" />
-          </a>
-
-          <a target="_blank" href="https://open.spotify.com/user/elmojunior35?si=7bbb377b42794199">
-            <img src={spotify} alt="spotify icon" />
-          </a>
-          
-          
-          <a target="_blank" href="https://wa.me/558498470691?text=Oi,%20o%20que%20voce%20pode%20fazer?">
-            <img src={elmobot} alt="ElmoBot icon" />
-          </a>
-
-          <a target="_blank" href="https://www.goodreads.com/_elmojr">
-            <img src={goodreads} alt="goodreads icon" />
-          </a>
-          
-          <a target="_blank" href="https://twitter.com/_ElmoJr">
-            <img src={twitter} alt="Twitter icon" />
-          </a>
-
+          {redes.map((e) => (
+            <a target="_blank" href={e.url}>
+              <img src={e.image} alt={`${e.name} Icon`} />
+            </a>
+          ))}
         </div>
+
+        <a  className="button" onClick={showMore}>{show? '▼ mais': '▲ menos' }</a>
+          
+        <div id="outrasRedes" className="hide pagelinks-socialLinks-container">
+          {outrasRedes.map((e) => (
+            <a target="_blank" href={e.url}>
+              <img src={e.image} alt={`${e.name} Icon`} />
+            </a>
+          ))}
+        </div>
+        
       </div>
 
       <Snackbar
