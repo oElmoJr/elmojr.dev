@@ -157,8 +157,6 @@ export default function PageLinks() {
           ))}
         </div>
 
-        <a  className="button" onClick={showMore}>{show? '▼ mais': '▲ menos' }</a>
-          
         <div id="outrasRedes" className="hide pagelinks-socialLinks-container">
           {outrasRedes.map((e) => (
             <a target="_blank" href={e.url}>
@@ -166,6 +164,8 @@ export default function PageLinks() {
             </a>
           ))}
         </div>
+        
+        <a  className="button" onClick={showMore}>{show? '▼ ver mais': '▲ ver menos' }</a>
         
       </div>
 
