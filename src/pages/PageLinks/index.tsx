@@ -145,8 +145,8 @@ export default function PageLinks() {
         </div>
       </div>
 
-        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
-        {/* <button onClick={() => handleClick()} >Portfólio</button> */}
+        {/* <button onClick={() => navigate("/portfolio")}>Portfólio</button>; */}
+        <button onClick={() => handleClick()} >Portfólio</button>
       
       <div className="pagelinks-links-container">
         <div className="pagelinks-socialLinks-container">
