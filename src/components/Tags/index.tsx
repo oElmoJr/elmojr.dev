@@ -8,7 +8,8 @@ type TagsProps = {
 };
 
 function showMore(ID: String) {
-  document.querySelector(`#${ID}`)?.classList.toggle('hide');
+  document.getElementById(`${ID}`)?.classList.toggle('hide');
+  // console.log(document.getElementById(`${ID}`))
 }
 
 export default function Tags({ taglist, id }: TagsProps) {

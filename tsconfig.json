@@ -17,5 +17,5 @@
     "jsx": "preserve"
   },
   "include": ["src"],
-  "files": ["src/@types/styled.d.ts"]
+  "files": ["src/types/styled.d.ts"]
 }

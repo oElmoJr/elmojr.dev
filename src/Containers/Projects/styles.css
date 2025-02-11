@@ -69,6 +69,13 @@
 }
 
 .project {
+  background-color: #32323223;
+
+  border: 2px solid #32323288;
+  border-radius: 16px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   gap: 65px;
@@ -76,7 +83,8 @@
 
 .project-banner {
   position: relative;
-  width: 50%;
+  width: 60%;
+  height: 100%;
 }
 
 .project-cover {
@@ -85,7 +93,7 @@
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
 
   max-width: 100%;
-  height: 276px;
+  height: 300px;
 
   object-fit: cover;
 }
@@ -114,13 +122,13 @@
   margin: 0;
 }
 
-.project-info a {
-  color: #e5e6e0;
-  text-decoration: underline;
+.project-info .project-links {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: auto;
 }
-.project-info a:hover {
-  opacity: 0.7;
-}
+
 
 @media screen and (max-width: 640px) {
   .projects-menu {
