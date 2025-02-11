@@ -20,6 +20,14 @@
   background-color: #eb5757;
 }
 
+.taglist .design {
+  background-color: goldenrod;
+}
+
+.taglist .mobile {
+  background-color: rebeccapurple;
+}
+
 .taglist .react {
   display: flex;
   align-items: center;
