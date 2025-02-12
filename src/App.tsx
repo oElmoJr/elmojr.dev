@@ -1,5 +1,5 @@
 import './styles/globalStyles.css';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import AppRoutes from './routes';
 
 function App() {
