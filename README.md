@@ -54,6 +54,7 @@ Para alimentar o meu portfólio, utilizo dados diretamente do GitHub. Aqui estã
 <h2 id="images" >Images</h2>
 
   <img id="icon"  alt="Icon" src="https://i.ibb.co/vwK5vMP/JR-logo.jpg">
+  <img id="icon"  alt="Icon" src="https://i.ibb.co/vwK5vMP/JR-logo.jpg">
 
   <img width="20%" align="right" id="banner" alt="Banner" src="https://i.ibb.co/vs7MWSy/print-pagelinks-mobile.jpg" >
   <img width="76%" id="" alt="Banner" src="https://i.ibb.co/sQbkBGh/print-pagelinks-web.png">
