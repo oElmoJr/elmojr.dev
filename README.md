@@ -53,14 +53,15 @@ Para alimentar o meu portfólio, utilizo dados diretamente do GitHub. Aqui estã
     
 <h2 id="images" >Images</h2>
 
-  <img id="icon" align="left" alt="Icon" src="https://i.ibb.co/vwK5vMP/JR-logo.jpg">
-  <img id="icon" alt=" old Icon" src="https://i.ibb.co/Jm01Kgw/old-logo.jpg">
+  <img id="icon"  alt="Icon" src="https://i.ibb.co/vwK5vMP/JR-logo.jpg">
 
-  <img height="350" align="right" id="banner" alt="Banner" src="https://i.ibb.co/vs7MWSy/print-pagelinks-mobile.jpg" >
-  <img height="350" id="" alt="Banner" src="https://i.ibb.co/sQbkBGh/print-pagelinks-web.png">
-  
-  <img height="350" align="right" src="https://i.ibb.co/4NdH0F2/print-portfolio-mobile.jpg"/>
-  <img height="350" src="https://i.ibb.co/nR52vDv/print-portfolio-web.png"/>
+  <img width="20%" align="right" id="banner" alt="Banner" src="https://i.ibb.co/vs7MWSy/print-pagelinks-mobile.jpg" >
+  <img width="76%" id="" alt="Banner" src="https://i.ibb.co/sQbkBGh/print-pagelinks-web.png">
+
+  <img width="100%" id="" alt="Banner" src="https://i.ibb.co/HfYL6dLh/elmojr-dev-mock.png">
+    
+  <img width="20%" align="right" src="https://i.ibb.co/4NdH0F2/print-portfolio-mobile.jpg"/>
+  <img width="76%" src="https://i.ibb.co/nR52vDv/print-portfolio-web.png"/>
 
 <h2 id="autor" >Autor</h2>
 
