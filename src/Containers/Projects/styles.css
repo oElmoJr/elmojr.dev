@@ -10,6 +10,12 @@
   flex-direction: row-reverse;
 }
 
+.project:nth-child(even) .project-info {
+  margin-left: 1rem;
+}
+
+
+
 .project {
   background-color: #32323223;
 
@@ -98,7 +104,14 @@
 
   .project:nth-child(even) {
     flex-direction: column;
+
+  } 
+
+  .project:nth-child(even) .project-info {
+    margin-left: 0rem;
   }
+  
+
 
   .project-banner,
   .project-cover {

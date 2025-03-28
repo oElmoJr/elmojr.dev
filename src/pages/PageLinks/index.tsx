@@ -137,7 +137,7 @@ export default function PageLinks() {
   );
 
   return (
-    <div className="pagelinks-main-container">
+    <div data-aos="zoom-in" className="pagelinks-main-container">
       <div className="pagelinks-heading-container">
         <img src={profilePhoto} alt="" />
         <div className="pagelinks-title-container">

@@ -15,7 +15,7 @@ export default function Projects() {
     <div data-aos="zoom-in-up" className="section-padding" id="projects">
     <Heading2>Portifolio:</Heading2>
 
-    <RepositoryMenu />
+    {/* <RepositoryMenu /> */}
 
     <div className="projects-container">
       {error ? (
