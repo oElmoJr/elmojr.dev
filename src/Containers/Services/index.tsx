@@ -12,7 +12,7 @@ import Heading3 from '../../components/Typography/Heading3';
 
 export default function Services() {
   return (
-    <div id="services" className="services-container section-padding">
+    <div data-aos="zoom-in-up" id="services" className="services-container section-padding">
       <Heading2>Serviços:</Heading2>
 
       <div className="services-cards-container">
@@ -38,7 +38,7 @@ export default function Services() {
         />
       </div>
 
-      <div>
+      <div data-aos="zoom-in-up">
         <Heading3>Experiencias:</Heading3>
         <Tech />
       </div>

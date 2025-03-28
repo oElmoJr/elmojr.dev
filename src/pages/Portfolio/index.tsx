@@ -1,6 +1,7 @@
 import './styles.css';
 import { Scrollbars } from 'react-custom-scrollbars';
 
+
 import {
   Header,
   About,
@@ -11,11 +12,12 @@ import {
 } from '../../Containers/imports';
 import NavBar from '../../components/NavBar';
 
+
 export default function Portifolio() {
   document.title = 'ElmoJr | Portifólio';
 
   return (
-    <Scrollbars>
+    // <Scrollbars>
       <div className="potifolio-container">
         <NavBar />
         <Header />
@@ -24,6 +26,6 @@ export default function Portifolio() {
         <Projects />
         <Footer />
       </div>
-    </Scrollbars>
+    // </Scrollbars>
   );
 }

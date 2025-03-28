@@ -15,7 +15,7 @@ const RepositoryCard = ({ repo }: RepositoryCardProps) => {
     <div className="project" key={repo.id}>
       <div className="project-banner">
         <img loading="lazy" className="project-icon" src={repo.images[1]} alt="" />
-        <img loading="lazy" className="project-cover" src={repo.images[repo.images.length - 1]} alt="" />
+        <img loading="lazy" className="project-cover" src={repo.images[5]} alt="" />
       </div>
       <div className="project-info">
         <Heading3>{repo.name}</Heading3>

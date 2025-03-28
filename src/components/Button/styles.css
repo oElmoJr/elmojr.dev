@@ -11,6 +11,8 @@
 
   padding: 0.5em 1.5em;
   cursor: pointer;
+  transition: opacity 0.3s ease; /* Adicionar transição */
+
 }
 
 .active {

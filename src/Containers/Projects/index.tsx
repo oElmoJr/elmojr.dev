@@ -1,40 +1,21 @@
 import Button from '../../components/Button';
-import SearchIcon from '@mui/icons-material/Search';
+
 import './styles.css';
 import Heading2 from '../../components/Typography/Heading2';
 
 
 import useRepositories from '../../hooks/useRepositories';
 import RepositoryCard from '../../components/RepositoryCard/RepositoryCard';
+import { RepositoryMenu } from '../../components/RepositoryMenu/RepositoryMenu';
 
 export default function Projects() {
   const { repositoriesInfo, error } = useRepositories();
 
-
   return (
-    <div className="section-padding" id="projects">
+    <div data-aos="zoom-in-up" className="section-padding" id="projects">
     <Heading2>Portifolio:</Heading2>
 
-    <div className="projects-menu">
-      <ul>
-        <li>
-          <Button buttonClass={'active'}>Todos</Button>
-        </li>
-        <li>
-          <Button>Web</Button>
-        </li>
-        <li>
-          <Button>Mobile</Button>
-        </li>
-        <li>
-          <Button>Design</Button>
-        </li>
-        <li>
-          <input type="search" placeholder="Pesquisar" />
-          <SearchIcon />
-        </li>
-      </ul>
-    </div>
+    <RepositoryMenu />
 
     <div className="projects-container">
       {error ? (

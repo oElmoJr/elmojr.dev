@@ -6,9 +6,9 @@ import './styles.css';
 export default function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="section-padding">
-      <div className="footer">
-        <div className="footer-container">
+    <div data-aos="zoom-in" className="section-padding">
+      <div   className="footer">
+        <div  className="footer-container">
           <Heading3>Vamos conversar sobre o seu projeto?</Heading3>
           <Button
             buttonClass={'active'}

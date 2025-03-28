@@ -42,6 +42,8 @@ const useRepositories = () => {
                 match => match[1]
               );
 
+              console.log(imageUrls);
+
               return {
                 ...repository,
                 readme: decodedReadme,

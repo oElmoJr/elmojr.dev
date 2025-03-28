@@ -12,6 +12,7 @@
   gap: 1.5rem;
 
   margin: 0 auto;
+
 }
 
 .pagelinks-heading-container {
@@ -61,6 +62,7 @@
 
   width: 100%;
   gap: 16px;
+
 }
 
 .pagelinks-links-container a.button {
@@ -71,8 +73,10 @@
   
   cursor: pointer;
   
+  
   padding: 4px 8px;
 }
+
 
 .pagelinks-main-container button {
   display: flex;
@@ -97,6 +101,7 @@
 .pagelinks-main-container button:hover {
   opacity: 0.7;
   transform: scale(1.07);
+  
 }
 
 .pagelinks-main-container button:disabled {
@@ -110,8 +115,10 @@
   gap: 1em;
 }
 
+
 .pagelinks-socialLinks-container a {
   display: flex;
+  
 }
 
 .pagelinks-socialLinks-container img {
@@ -123,9 +130,20 @@
   transform: scale(1.07);
 }
 
-.hide {
-  display: none;
+.pagelinks-socialLinks-container {
+  height: 60px;
+
+  transition: all 200ms;
 }
+
+
+.hide {
+  transform: translatey(-100px);
+  opacity: 0;
+  z-index: -1;
+  height: 0;
+}
+
 
 @media screen and (max-width: 480px) {
   .pagelinks-main-container {
@@ -160,4 +178,5 @@
   background: none ;
   height: 30px;
   box-shadow: none;
+  
 }

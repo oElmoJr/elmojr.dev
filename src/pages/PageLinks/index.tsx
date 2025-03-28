@@ -22,6 +22,7 @@ import profilePhoto from "../../assets/SquarePhoto.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Heading1 from "../../components/Typography/Heading1";
 import Button from "../../components/Button";
+import Aos from "aos";
 
 
 let redes = [
@@ -145,8 +146,8 @@ export default function PageLinks() {
         </div>
       </div>
 
-        {/* <button onClick={() => navigate("/portfolio")}>Portfólio</button>; */}
-        <button onClick={() => handleClick()} >Portfólio</button>
+        <button onClick={() => navigate("/portfolio")}>Portfólio</button>
+        {/* <button onClick={() => handleClick()} >Portfólio</button> */}
       
       <div className="pagelinks-links-container">
         <div className="pagelinks-socialLinks-container">
@@ -156,16 +157,18 @@ export default function PageLinks() {
             </a>
           ))}
         </div>
+        
 
         <div id="outrasRedes" className="hide pagelinks-socialLinks-container">
           {outrasRedes.map((e) => (
-            <a target="_blank" href={e.url}>
+            <a className="links"  target="_blank" href={e.url}>
               <img src={e.image} alt={`${e.name} Icon`} />
             </a>
           ))}
         </div>
+          <a  className="button" onClick={showMore}>{show? '▼ ver mais': '▲ ver menos' }</a>
         
-        <a  className="button" onClick={showMore}>{show? '▼ ver mais': '▲ ver menos' }</a>
+        
         
       </div>
 
