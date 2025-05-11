@@ -10,7 +10,7 @@ import {
   telegram,
   instagram,
   threads,
-  goodreads,
+  maratona,
   pinterest,
   spotify,
   bluesky,
@@ -61,9 +61,9 @@ let redes = [
 
 let outrasRedes = [
   {
-    'image': goodreads,
-    'name': "Goodreads",
-    'url': "https://www.goodreads.com/_elmojr"
+    'image': maratona,
+    'name': "Maratona.app",
+    'url': "https://maratona.social/@elmojr"
    },
   {
     'image': pinterest,
@@ -142,7 +142,7 @@ export default function PageLinks() {
         <img src={profilePhoto} alt="" />
         <div className="pagelinks-title-container">
           <Heading1>ElmoJr.</Heading1>
-          <Button buttonClass={"active"}>Desenvolvedor Front-end</Button>
+          <Button buttonClass={"active"}>Desenvolvedor FullStack</Button>
         </div>
       </div>
 
